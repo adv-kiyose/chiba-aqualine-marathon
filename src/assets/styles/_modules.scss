@@ -1,0 +1,47 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+// Swiper補正
+.swiper-button-prev,
+.swiper-button-next {
+	width: 24px !important;
+	height: 24px !important;
+	user-select: none;
+	color: transparent !important;
+
+	svg {
+		display: none !important;
+	}
+}
+
+.swiper-button-prev {
+	top: calc(50% + 12px) !important;
+	left: 4px !important;
+	background: url(@/assets/images/utils/icon_prev_slide_blue.svg) center no-repeat;
+	background-size: contain;
+}
+.swiper-button-next {
+	top: calc(50% + 12px) !important;
+	right: 4px !important;
+	background: url(@/assets/images/utils/icon_next_slide_blue.svg) center no-repeat;
+	background-size: contain;
+}
+
+.swiper-slide {
+	img {
+		width: 100%;
+	}
+}
+
+.l-footer__banners--inner {
+	.swiper-button-prev {
+		left: 10px !important;
+		background: url(@/assets/images/utils/icon_prev_slide.svg) center no-repeat;
+		background-size: contain;
+		}
+	.swiper-button-next {
+		right: 10px !important;
+		background: url(@/assets/images/utils/icon_next_slide.svg) center no-repeat;
+		background-size: contain;
+	}
+}

@@ -1,0 +1,20 @@
+@use "variables" as *;
+
+/*
+* sp-pnly
+* @description SP表示時のみ適用のスタイルを記載
+* @param {number | string} $max-width: 適用する最大幅（ブレイクポイント）　未指定の場合は767pxまで適用 
+*/
+@mixin respond-to($max-width: $break-sp) {
+	@media (max-width: $max-width) {
+	  @content; // 呼び出し元の中身を展開
+	}
+}
+
+@mixin hover-opacity() {
+	transition: opacity $fade-spd-default ease;
+
+	&:hover {
+		opacity: 0.7;
+	}
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja_JP">
+<head>
+	<%
+		const title = "404 NOT FOUND";
+		const path="" 
+		const description=""
+	%>
+	<%- include("src/include/head.ejs", {title, path, description}) %>
+</head>
+<body class="l-top">
+	<%- include("src/include/header.html") %>
+	<main class="l-main">
+	<section class="l-content">
+		<div class="l-content__inner">
+			<div class="l-column__main">
+				<section class="c-container">
+					<h2 class="c-heading__large c-heading__error"><span class="c-heading__alp">NOT FOUND</span><span class="c-heading__sub">お探しのページが見つかりません。</span></h2>
+					<p class="c-text__error">申し訳ありません。<br>
+						お探しのページは、削除されたか、<br>
+						リンクが変更されたか、一時的にご利用いただけない可能性がございます。<br>
+						正しいURLかをご確認ください。</p>
+				</section>
+			</div>
+		</div>
+	</section>
+	</main>
+	<%- include("src/include/footer.html") %>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v24.0"></script>
+	<script type="module" src="/src/main.js"></script>
+</body>
+</html>

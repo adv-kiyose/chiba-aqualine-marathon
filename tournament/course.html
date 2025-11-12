@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ja_JP">
+<head>
+		<%
+			const title = "コース";
+			const path="tournament/course.html" 
+			const description="2026年11月8日開催！ちばアクアラインマラソン2026のコース紹介です。海ほたるの青く雄大な空と海に囲まれた景色の中や、千葉の田園を、市民ランナーが走ります。"
+		%>
+		<%- include("src/include/head.ejs", {title, path, description}) %>
+</head>
+<body class="l-guideline">
+	<%- include("src/include/header.html") %>
+	<main class="l-main">
+	<section class="l-heading p-top__heading">
+		<div class="c-heading__container--main">
+			<h2 class="c-heading__main">コース</h2>
+		</div>
+	</section>
+	<section class="l-content">
+		<div class="l-content__inner">
+		<div class="l-column__main">
+			<section class="c-container">
+				<h3 class="c-heading__info">コース紹介</h3>
+				<div class="c-block__guideline">
+					<h4 class="c-heading__guideline">大会コースマップ</h4>
+					<div class="c-block__guideline">
+						<p class="c-text__guideline">青い海を見渡しながら澄みきった秋空を駆け抜ける、「ちばアクアラインマラソン2026」。<br>
+						海に面し広々とした潮浜公園前からはじまる、ちばアクアラインマラソンのコースは、アクアラインの最高点40.85mめがけて木更津金田ICから海ほたるを、車いすの方も、ハーフマラソンの方も、マラソン参加の方も、天空を駆けるように走ります。<br>
+						車いすハーフ/ハーフマラソンランナーは、三井アウトレットパーク木更津を横目に牛込海岸でフィニッシュ。<br>
+						マラソンランナーは、後半、肥沃な農地で農畜産物を生産する袖ケ浦市の田園や、ほたる野や清見台といった住宅地までバリエーション豊かなコースを回って、スタート地点にほど近い旧木更津市役所にてフィニッシュ。<br>
+						海を走って楽しみ、千葉のさまざまな魅力を、再発見いただけます。</p>
+					</div>
+					<p class="c-image__guideline"><img src="/images/tournament/course/img_map.png" alt="大会コース"></p>
+					<ul class="c-list__guideline--kome">
+						<li>強風等で、東京湾アクアライン橋梁部が走行不能と実行委員会が判断した場合は、強風短縮コースで行います。マラソンは、チャレンジラン31.4km、ハーフマラソン・車いすハーフマラソンは、チャレンジラン10.3kmのコースに変更します。</li>
+						<li>今後、道路の形状変更等の事情により、コースの一部を変更する可能性があります。</li>
+					</ul>
+				</div>
+				<div class="c-block__guideline">
+					<h4 class="c-heading__guideline">コース高低図</h4>
+					<p class="c-image__guideline"><img src="/images/tournament/course/img_high_low.png" alt="コース高低図"></p>
+				</div>
+				<div class="c-block__guideline">
+					<p class="c-button__standard c-button__download"><a href="/pdf/26coursemap.pdf">PDFはこちら</a></p>
+				</div>
+			</section>
+		</div>
+			<%- include("src/include/subColumn.html") %>
+		</div>
+	</section>
+	</main>
+	<%- include("src/include/footer.html") %>	
+	<script type="module" src="/src/main.js"></script>
+</body>
+</html>

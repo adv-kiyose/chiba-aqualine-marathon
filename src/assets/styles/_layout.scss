@@ -1,0 +1,265 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+.l-header {
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	gap: 16px;
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	background-color: $color-white;
+
+	&__wrapper {
+		&--navigation {
+			flex: 1 1 auto;
+		} 
+	}
+
+	&__block {
+		&--upper {
+			width: 100%;
+			height: 70px;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			gap: 16px;
+			background-color: $color-main-blue;
+
+			@include respond-to() {
+				height: 50px;
+			}
+		}
+
+		&--bottom {
+			height: 80px;
+			padding-left: 24px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			@include respond-to() {
+				height: 63px;
+				justify-content: flex-end;
+				gap: 16px;
+			}
+		}
+	}
+
+	&__logo {
+		justify-self: flex-start;
+		flex: 0 0 157px;
+
+		@include respond-to() {
+			flex-basis: 108px;
+		}
+	}
+
+	&__sns {
+		@include respond-to() {
+			position: absolute;
+			top: 67px;
+			left: 16px;
+		}
+	}
+
+	&__button--language {
+		text-align: right;
+	}
+}
+
+.l-footer {
+	&__container {
+		&--main {
+			padding: 50px 24px 24px;
+			background: url(@/assets/images/utils/bg_footer.png) center -60px no-repeat;
+			background-size: cover;
+
+			@include respond-to() {
+				padding: 16px;
+				background-position: center -20px;
+			}
+		}
+	}
+
+	&__container-bottom {
+		padding: 50px 0 24px;
+		position: relative;
+		background: linear-gradient(92.69deg, #2F2FFF 0%, #0176C3 100%);
+
+		@include respond-to() {
+			padding: 24px 0;
+		}
+
+		&::before {
+			content: "";
+			width: 100%;
+			height: 100%;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: url(@/assets/images/utils/bg_footer_bottom.png) center top no-repeat;
+			background-size: cover;
+			opacity: 0.3;
+		}
+	}
+
+	&__banners {
+		position: relative;
+		padding: 0 24px;
+		margin-bottom: 32px;
+
+		@include respond-to() {
+			margin-bottom: 16px;
+			padding: 0 16px;
+		}
+
+		&--inner {
+			display: flex;
+			justify-content: center;
+
+			@include respond-to() {
+				padding: 0 42.5px;
+			}
+		}
+
+		@include respond-to() {
+			padding: 0;
+		}
+	}
+
+	&__inner {
+		max-width: 850px;
+		margin: 0 auto;
+		position: relative;
+
+		&--bottom {
+			padding: 0 24px;
+
+			@include respond-to() {
+				padding: 0 16px;
+			}
+		}
+
+		&--info {
+			@include respond-to() {
+				margin-bottom: 16px;
+			}
+		}
+	}
+
+	&__block {
+		&--navigations {
+			max-width: 980px;
+			margin: 0 auto 32px;
+			padding: 0 20px;
+			position: relative;
+
+			@include respond-to() {
+				display: none;
+			}
+		}
+
+		&--icon {
+			margin: 0 0 32px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			@include respond-to() {
+				flex-direction: column;
+				gap: 32px;
+			}
+		}
+
+		&--link-buttons {
+			display: flex;
+			// TODO: メディア向けプレス復活後に戻す
+			// justify-content: space-between;
+			justify-content: center;
+
+			@include respond-to() {
+				flex-direction: column;
+				gap: 16px;
+			}
+		}
+
+		&--copy {
+			margin-bottom: 32px;
+			display: flex;
+			justify-content: center;
+		}
+	}
+
+	&__text {
+		&--privacy {
+			margin-bottom: 16px;
+
+			a {
+				@include respond-to() {
+					justify-content: flex-start !important;
+				}
+			}
+		}
+	}
+
+	&__copyright {
+		padding: 10px;
+		background-color: $color-logo-blue;
+		text-align: center;
+	}
+}
+
+.l-content {
+	background-color: $color-bg-light-blue;
+
+	@include respond-to() {
+		padding-bottom: 40px;
+	}
+
+	&__inner {
+		max-width: 1440px;
+		margin: 0 auto;
+		padding: 24px;
+		display: flex;
+		gap: 24px;
+
+		@include respond-to() {
+			padding: 32px 16px;
+			flex-direction: column;
+			gap: 0;
+		}
+	}
+}
+
+.l-pagetop {
+	max-width: 100%;
+	margin: 0 auto;
+	height: 0;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 900;
+
+	button {
+		position: absolute;
+		right: 30px;
+		bottom: 80px;
+
+		@include respond-to() {
+			right: 15px;
+		}
+	}
+}
+
+.l-column__main {
+	flex: 1 1 calc((1050 / 1440) * 100%);
+}
+
+.l-column__sub {
+	flex: 1 1 calc((318 / 1440) * 100%);
+}

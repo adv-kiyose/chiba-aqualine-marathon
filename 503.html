@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ja_JP">
+<head>
+	<%
+		const title = "503 SERVICE UNAVAILABLE";
+		const path="" 
+		const description=""
+	%>
+	<%- include("src/include/head.ejs", {title, path, description}) %>
+</head>
+<body class="l-top">
+	<%- include("src/include/header.html") %>
+	<main class="l-main">
+	<section class="l-content">
+		<div class="l-content__inner">
+			<div class="l-column__main">
+				<section class="c-container">
+					<h2 class="c-heading__large c-heading__error"><span class="c-heading__alp">SERVICE UNAVAILABLE</span>
+						<span class="c-heading__sub">誠に申し訳ございません。<br>ただいま混み合っております。</span></h2>
+					<p class="c-text__error">恐れ入りますが、しばらく経ってから再度お試しいただきますようにお願いいたします。</p>
+				</section>
+			</div>
+		</div>
+	</section>
+	</main>
+	<%- include("src/include/footer.html") %>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v24.0"></script>
+	<script type="module" src="/src/main.js"></script>
+</body>
+</html>

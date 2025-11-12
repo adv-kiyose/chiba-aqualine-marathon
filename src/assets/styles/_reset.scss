@@ -1,0 +1,44 @@
+@use './variables' as *;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+/* 見出しのマージンを削除 */
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+p {
+	margin: 0;
+}
+
+  /* リストのデフォルトスタイル削除 */
+ul, ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+  /* 画像・動画をブロック表示に */
+img, video {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+button {
+	appearance: none;
+	border: none;
+}

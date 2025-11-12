@@ -1,0 +1,97 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.p-top {
+	&__mainvisual {
+		position: relative;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+		}
+
+		.sp {
+			display: none;
+		}
+
+		@include respond-to() {
+			.pc {
+				display: none;
+			}
+
+			.sp {
+				display: block;
+			}
+		}
+
+	}
+
+	&__countdown {
+		padding: 16px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		color: $color-main-blue;
+		background: linear-gradient(90.35deg, #FFFF70 0%, #EAEA00 100%);
+		gap: 5px;
+
+		p {
+			display: inline-block;
+			text-align: center;
+		}
+
+		&--unit {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+
+			&:first-of-type > .p-top__countdown--number {
+				width: 1.8em;
+				margin-left: 5px;
+
+				@include respond-to() {
+					margin-left: 0;
+				}
+			}
+		}
+		
+		&--text {
+			font-size: 24px;
+			font-weight: bold;
+			line-height: 1;
+
+			@include respond-to() {
+				font-size: 16px;
+			}
+		}
+
+		&--day {
+			font-size: 24px;
+			font-weight: bold;
+			line-height: 1;
+			display: flex;
+			flex-wrap: wrap;
+
+			align-items: center;
+			gap: 10px;
+ 
+			@include respond-to() {
+				font-size: 16px;
+			}
+		}
+
+		&--number {
+			width: 1.3em;
+			font-size: 64px;
+			font-family: $font-outfit;
+			font-weight: normal;
+			display: flex;
+			justify-content: center;
+
+			@include respond-to() {
+				font-size: 30px;
+			}
+		}
+	}
+}
