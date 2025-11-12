@@ -6,7 +6,7 @@ export function initFadeInContainer() {
 		if(contentContainers.length <= 0) { return; }
 
 		const observerOptions = {
-			threshold: 0.2 // 20%見えているとき
+			threshold: 0.15 // 15%見えているとき
 		}
 
 		const observer = new IntersectionObserver((entries, obs) => {
@@ -26,7 +26,7 @@ export function initFadeInContainer() {
 			// 初期状態で画面内にある要素を即時処理
 			const rect = value.getBoundingClientRect();
 			const inView =
-				rect.top < window.innerHeight * (1 - 0.2) && // thresholdに合わせて20%考慮
+				rect.top < window.innerHeight && // 画面幅によって判定をすり抜けるため、thresholdは考慮しない
 				rect.bottom > 0;
 
 			if (inView) {
