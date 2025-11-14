@@ -262,4 +262,10 @@
 
 .l-column__sub {
 	flex: 1 1 calc((318 / 1440) * 100%);
+
+	.c-container{
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
 }

@@ -1,0 +1,59 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.p-sponsorship {
+    &__title {
+        width: 100%;
+        text-align: center;
+        color: $color-white;
+        padding-block: 3.75rem;
+        background: url(@/assets/images/pages/sponsorship/bg_pc.png) center no-repeat;
+        background-size: cover;
+        margin-bottom: 2rem;
+
+        .text{
+            &-read{
+                font-size: clamp(1rem, 0.545rem + 2.27vw, 2.25rem);
+                font-weight: bold;
+            }
+            &-ttl{
+                font-size: clamp(1.5rem, 0.955rem + 2.73vw, 3rem);
+                font-weight: bold;
+            }
+        }
+        @include respond-to(){
+            background: url(@/assets/images/pages/sponsorship/bg_sp.png) center no-repeat;
+            background-size: cover;
+            padding-block: 1.5rem;
+        }
+    }
+    &__contact{
+        border-top: 1px dashed $color-disabled-gray;
+        border-bottom: 1px dashed $color-disabled-gray;
+        padding-block: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        dt{
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            &::before{
+                content: "";
+                display: block;
+                width: 24px;
+                height: 24px;
+                background: url(@/assets/images/utils/icon_mail.svg) center no-repeat;
+                background-size: content;
+                
+            }
+        }
+        dd{
+            margin-left: 0;
+        }
+        @include respond-to(){
+            font-size: 14px;
+        }
+    }
+}

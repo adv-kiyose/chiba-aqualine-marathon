@@ -1234,6 +1234,10 @@
 	&__error {
 		text-align: center;
 	}
+	&__strong{
+		font-weight: bold;
+		color: $color-tag-info;
+	}
 }
 
 .c-link {
@@ -1470,6 +1474,7 @@
 	&__guideline {
 		margin-bottom: 40px;
 	}
+	
 }
 
 .c-table {
@@ -1522,7 +1527,15 @@
 		text-align: center;
 
 		img {
-			margin: 0 auto;
+			margin: 1rem auto;
+		}
+
+		&-link{
+			text-align: center;
+			a{
+				text-decoration: underline;
+				color: $color-main-blue;
+			}
 		}
 	}
 }
