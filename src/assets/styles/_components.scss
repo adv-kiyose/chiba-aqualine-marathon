@@ -145,6 +145,21 @@
 		}
 	}
 
+	&__message {
+		max-width: 50%;
+		display: inline-block;
+		margin-left: 24px;
+		margin-bottom: -16px;
+		padding: 0 16px;
+		position: relative;
+		z-index: 1;
+		background-color: $color-container-light-blue;
+
+		img {
+			width: 100%;
+		}
+	}
+
 	&__navigation {
 		&--sub {
 			padding-bottom: 11px;
@@ -203,6 +218,50 @@
 		}
 	}
 
+	&__name {
+		&--advisor {
+			margin-bottom: 32px;
+			font-size: 32px;
+			font-weight: bold;
+	
+			span {
+				font-size: 24px;
+			}
+		}
+
+		&--ambassador {
+			margin-bottom: 16px;
+			font-size: 20px;
+			font-weight: 500;
+
+			span {
+				font-size: 16px;
+				font-weight: normal;
+				line-height: 1.6;
+			}
+		}
+	}
+
+	&__position {
+		&--ambassador {
+			margin-bottom: 16px;
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			font-size: 20px;
+			font-weight: 500;
+
+			&::before {
+				content: "";
+				width: 19px;
+				height: 21px;
+				display: block;
+				background: url(@/assets/images/utils/icon_flag.svg) center no-repeat;
+				background-size: contain;
+			}
+		}
+	}
+
 	&__error {
 		flex-direction: column;
 	}
@@ -256,6 +315,14 @@
 				display: block;
 			}
 		}
+	}
+
+	&__member {
+		flex: 1 0.5 236px;
+	}
+
+	&__ambassador {
+		flex: 1 0.5 200px;
 	}
 
 	&__guideline {
@@ -1073,6 +1140,26 @@
 		}
 	}
 
+	&__career {
+		margin-bottom: 32px;
+		padding: 16px 0;
+		border-top: 1px dashed $color-main-blue;
+		border-bottom: 1px dashed $color-main-blue;
+
+		li {
+			margin-bottom: 8px;
+			font-size: 16px;
+			line-height: 1.6;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 16px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
 	&__navigation {
 		&--sub {
 			height: 100%;
@@ -1193,8 +1280,8 @@
 		}
 
 		&--caption {
-			margin-top: -36px;
-			margin-bottom: 20px;
+			margin-top: -16px;
+			margin-bottom: 24px;
 
 			a {
 				color: $color-main-blue;
@@ -1237,6 +1324,31 @@
 	&__strong{
 		font-weight: bold;
 		color: $color-tag-info;
+	}
+
+	&__profile {
+		margin-bottom: 16px;
+		font-size: 16px;
+		line-height: 1.6;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__message {
+		margin-bottom: 16px;
+		font-size: 14px;
+		line-height: 1.6;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&--translation {
+			font-size: 14px;
+			line-height: 1.4;
+		}
 	}
 }
 
@@ -1462,6 +1574,20 @@
 	}
 }
 
+.c-wrap {
+	&__member {
+		margin-bottom: 24px;
+		display: flex;
+		gap: 32px;
+	}
+
+	&__ambassador {
+		margin-bottom: 32px;
+		display: flex;
+		gap: 24px;
+	}
+}
+
 .c-block {
 	&__split {
 		&--sponsor {
@@ -1475,6 +1601,25 @@
 		margin-bottom: 40px;
 	}
 	
+	&__member {
+		flex: 1 1 718px;
+	}
+}
+
+.c-inner {
+	&__message {
+		padding: 24px;
+		border: 1px solid $color-main-blue;
+		border-radius: 16px;
+		position: relative;
+
+		&::before {
+			content: "";
+			width: 374px;
+			height: 76px;
+			position: absolute;
+		}
+	}
 }
 
 .c-table {

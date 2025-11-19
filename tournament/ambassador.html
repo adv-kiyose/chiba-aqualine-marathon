@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ja_JP">
+<head>
+		<%
+			const title = "オフィシャルアンバサダー";
+			const path="tournament/ambassador.html" 
+			const description="2026年11月8日開催！ちばアクアラインマラソン2026の大会概要です。海ほたるの青く雄大な空と海に囲まれた景色の中や、千葉の田園を、市民ランナーが走ります。"
+		%>
+		<%- include("src/include/head.ejs", {title, path, description}) %>
+</head>
+<body class="l-guideline">
+	<%- include("src/include/header.html") %>
+	<main class="l-main">
+	<section class="l-heading p-top__heading">
+		<div class="c-heading__container--main">
+			<h2 class="c-heading__main">大会情報</h2>
+		</div>
+	</section>
+	<section class="l-content">
+		<div class="l-content__inner">
+		<div class="l-column__main">
+			<section class="c-container">
+				<div class="c-block__ambassador">
+					<h3 class="c-heading__info">オフィシャルアンバサダー</h3>
+					<p class="c-text__guideline--caption">ランニング界で著名なインフルエンサー6名の方に就任いただき、「若者・女性応援」「インバウンド応援」など各分野を中心に、ランナー目線ならではの情報の発信やランニングイベントの開催など、オンライン、オフライン問わず、大会を盛り上げていただきます。</p>
+					<div class="c-block__guideline">
+						<div class="c-wrap__ambassador">
+							<p class="c-image__ambassador"><img src="/public/images/tournament/ambassador/img_wakana_fukushima.jpg" alt="写真：福島 和可菜さん"></p>
+							<div class="c-block__member">
+								<p class="c-heading__position--ambassador">若者・女性応援</p>
+								<h5 class="c-heading__name--ambassador">福島 和可菜<span>（ふくしまわかな）</span></h5>
+								<p class="c-text__profile">北海道函館市出身のタレント・女優・マラソンランナーであり、元陸上自衛官。<br>
+								テレビやラジオに多数出演しており、函館市や各地のアドバイザーとしても魅力を発信。</p>
+								<div class="c-block__message">
+									<h4 class="c-heading__message"><img src="/public/images/tournament/heading_message.svg" alt="大会へのメッセージ"></h4>
+									<div class="c-inner__message">
+										<p class="c-text__message">2026年大会、アンバサダーとして大会に関われる事をとても嬉しく思います！<br>アクアラインは釣りやゴルフに行く時に良く利用していますが、そこを貸切にして走れるなんて何と贅沢でしょうか♩<br>千葉県の街中はもちろん、潮風を感じながらアクアライン（海の上）を走ってあの圧巻の景色を皆様と共に楽しめたら幸せです！<br>フルはもちろんハーフもあるので、まだ大会に参加した事ない方も、ぜひ！挑戦してみませんか？！</p>
+										<p class="c-text__message">私は、マラソンを始めて10kg痩せました（笑）<br>美容や健康にも繋がるいい事づくしの走る魅力を、たくさんの方々と共感したい！全力応援します！<br>アクアラインマラソン2026一緒に素晴らしい大会にしましょう♩よろしくお願い致します！</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="c-wrap__ambassador">
+							<p class="c-image__ambassador"><img src="/public/images/tournament/ambassador/img_tamujo.jpg" alt="写真：たむじょーさん"></p>
+							<div class="c-block__member">
+								<p class="c-heading__position--ambassador">オフィシャル YouTuber</p>
+								<h5 class="c-heading__name--ambassador">たむじょー</h5>
+								<p class="c-text__profile">千葉県柏市出身、市立船橋高校卒業。帝京大学陸上競技部で活躍した元箱根駅伝ランナー。<br>
+									ランニング×コメディYouTuberとして活動。</p>
+								<div class="c-block__message">
+									<h4 class="c-heading__message"><img src="/public/images/tournament/heading_message.svg" alt="大会へのメッセージ"></h4>
+									<div class="c-inner__message">
+										<p class="c-text__message">2026年ちばアクアラインマラソンアンバサダー兼、オフィシャルYouTuberとして盛り上げられること、今回もとても楽しみです！<br>
+										海の上を走る2年に1度の特別なコースの魅力や、地元千葉県の魅力を動画でたくさんの人に届けていきます！<br>
+										僕自身も思いっ切り楽しんで走るので、一緒に大会を盛り上げていきまーしょうっ！</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="c-wrap__ambassador">
+							<p class="c-image__ambassador"><img src="/public/images/tournament/ambassador/img_sui.jpg" alt="写真：SUIさん"></p>
+							<div class="c-block__member c-block__ambassador">
+								<p class="c-heading__position--ambassador">インバウンド応援</p>
+								<h5 class="c-heading__name--ambassador">SUI<span>（すい）</span></h5>
+								<p class="c-text__profile">東京都出身のシンガーソングランナーとして音楽とランニングを融合させた活動を展開している。<br>
+									音楽活動では、テレビ番組で楽曲が起用されるなど、多方面で活躍。</p>
+								<div class="c-block__message">
+									<h4 class="c-heading__message"><img src="/public/images/tournament/heading_message.svg" alt="大会へのメッセージ"></h4>
+									<div class="c-inner__message">
+										<p class="c-text__message">2年に一度だけ走れるアクアラインマラソン！<br>
+											自分の脚で走って見る、あの景色は一生忘れられない絶景です。<br>
+											42.195kmという距離は決して短くないけれど、<br>
+											その分ゴールで味わう感動も大きなものです！<br>
+											一人じゃない、みんなで力を合わせてゴールへ！<br>
+											エイエイオー！</p>
+										<p class="c-text__message">來自台灣的跑者們，誠摯邀請你們來日本參加　跨海公路馬拉松！<br>
+											能在海上公路上奔跑，是一生難忘的體驗。<br>
+											感受海風、陽光與滿滿的感動，<br>
+											請一定要來日本，一起奔向那片蔚藍的海吧！</p>
+										<p class="c-text__message c-text__message--translation">※訳<br>
+											台湾のランナーのみなさん、ぜひ日本に来て「アクアラインマラソン（跨海公路馬拉松）」に参加してください！<br>
+											海の上を走る体験は、一生の思い出になります。<br>
+											海風や太陽、そして感動を一緒に感じながら、<br>
+										あの青い海へ一緒に走り出しましょう！</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="c-wrap__ambassador">
+							<p class="c-image__ambassador"><img src="/public/images/tournament/ambassador/img_misato_tsuboi.jpg" alt="写真：坪井 ミサトさん"></p>
+							<div class="c-block__member c-block__ambassador">
+								<p class="c-heading__position--ambassador">若者・女性応援</p>
+								<h5 class="c-heading__name--ambassador">坪井 ミサト<span>（つぼい）</span></h5>
+								<p class="c-text__profile">奈良県出身のタレント・パーソナルトレーナー。<br>
+								ランニングインストラクターの資格を取得し、女性ランニングコミュニティ"wellbe"を運営。<br>
+								フィットネスやランニングの楽しさをSNSやメディアを通じて発信。</p>
+								<div class="c-block__message">
+									<h4 class="c-heading__message"><img src="/public/images/tournament/heading_message.svg" alt="大会へのメッセージ"></h4>
+									<div class="c-inner__message">
+										<p class="c-text__message">前回大会に続き、今年もアンバサダーとして関わらせていただけることをとても嬉しく思います。千葉アクアラインマラソンにはたくさんの魅力があります。地元のおもてなしが豪華だったり、海風を感じながらアクアラインを走れる特別感は、この大会ならではです。特に、女性や若い世代の皆さんに“走ることの楽しさ”や"挑戦した先の達成感"を届けたいです。お会いできるのを楽しみにしています！</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="c-wrap__ambassador">
+							<p class="c-image__ambassador"><img src="/public/images/tournament/ambassador/img_m_takashi.jpg" alt="写真：M高史さん"></p>
+							<div class="c-block__member c-block__ambassador">
+								<p class="c-heading__position--ambassador">ファンランリーダー</p>
+								<h5 class="c-heading__name--ambassador">M高史<span>（えむたかし）</span></h5>
+								<p class="c-text__profile">東京都出身のものまねアスリート芸人。 全国のマラソン大会でゲストランナーやMCを務めている。<br>
+								保育園や学校、福祉施設への訪問や講演活動も行い、スポーツの楽しさを広めている。</p>
+								<div class="c-block__message">
+									<h4 class="c-heading__message"><img src="/public/images/tournament/heading_message.svg" alt="大会へのメッセージ"></h4>
+									<div class="c-inner__message">
+										<p class="c-text__message">現状打破！こんにちは、Ｍ高史です！この度、ちばアクアラインマラソン2026のオフィシャルアンバサダーを務めさせていただきます！<br>
+										Ｍ高史はファンランリーダーとして、初めてご参加される方や、ランニングを始めたばかりの方、これからジョギングを初めてみようかなという方、まずはウォーキングからという方、皆さんそれぞれの楽しみ方があると思いますので、全力で応援させていただきます！<br>
+										他の人と比べるのではなく、自分自身の足を一歩踏み出してみると、自己肯定感も上がり、きっとエンジョイできると思います！<br>
+										当日お会いできるのを楽しみにしています！</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="c-wrap__ambassador">
+							<p class="c-image__ambassador"><img src="/public/images/tournament/ambassador/img_makarun.jpg" alt="写真：まかランさん"></p>
+							<div class="c-block__member c-block__ambassador">
+								<p class="c-heading__position--ambassador">インバウンド応援</p>
+								<h5 class="c-heading__name--ambassador">まかラン</h5>
+								<p class="c-text__profile">福井県出身の元実業団ランナー。ビューティーアドバイザーとして、ランニングと美容を融合させた、女性ランナーに向けた実用的なアドバイスを発信。</p>
+								<div class="c-block__message">
+									<h4 class="c-heading__message"><img src="/public/images/tournament/heading_message.svg" alt="大会へのメッセージ"></h4>
+									<div class="c-inner__message">
+										<p class="c-text__message">今回もオフィシャルアンバサダーとして参加させていただきます。<br>
+											前回大会で初めてアクアラインの上を走ったときの感動は、今でも鮮明に覚えています。<br>
+											今回も再びあの景色の中を走れることを心から楽しみにしています。<br>
+											また、海外からの参加者も多く、国内外のランナーの皆さんと交流できることも大きな魅力だと感じています。<br>
+											当日、皆さんと一緒に走れることを楽しみにしています。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<%- include("src/include/subColumn.html") %>
+		</div>
+	</section>
+	</main>
+	<%- include("src/include/footer.html") %>	
+	<script type="module" src="/src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ja_JP">
+<head>
+		<%
+			const title = "オフィシャルアドバイザー";
+			const path="tournament/official.html" 
+			const description="2026年11月8日開催！ちばアクアラインマラソン2026の大会概要です。海ほたるの青く雄大な空と海に囲まれた景色の中や、千葉の田園を、市民ランナーが走ります。"
+		%>
+		<%- include("src/include/head.ejs", {title, path, description}) %>
+</head>
+<body class="l-guideline">
+	<%- include("src/include/header.html") %>
+	<main class="l-main">
+	<section class="l-heading p-top__heading">
+		<div class="c-heading__container--main">
+			<h2 class="c-heading__main">大会情報</h2>
+		</div>
+	</section>
+	<section class="l-content">
+		<div class="l-content__inner">
+		<div class="l-column__main">
+			<section class="c-container">
+				<h3 class="c-heading__info">オフィシャルアドバイザー</h3>
+				<p class="c-text__guideline--caption">競技経験を生かしたランナー向けアドバイスや、社会に向けてスポーツの持つ価値や魅力、楽しさを発信できる人材として、スポーツコメンテーターの千葉 真子(ちば まさこ)さんに就任いただきました。</p>
+				<div class="c-block__guideline">
+					<h4 class="c-heading__guideline">オフィシャルアドバイザー紹介</h4>
+					<div class="c-wrap__member">
+						<p class="c-image__member"><img src="/public/images/tournament/official/img_masako.jpg" alt="写真：千葉 真子さん"></p>
+						<div class="c-block__member">
+							<h5 class="c-heading__name--advisor">千葉 真子<span>さん</span></h5>
+							<ul class="c-list__career">
+								<li>
+									<p class="c-text__career">1996年</p>
+									<p class="c-text__career">アトランタオリンピック</p>
+									<p class="c-text__career">１万メートル</p>
+									<p class="c-text__career">５位</p>
+								</li>
+								<li>
+									<p class="c-text__career">1996年</p>
+									<p class="c-text__career">世界陸上アテネ大会</p>
+									<p class="c-text__career">１万メートル</p>
+									<p class="c-text__career">３位</p>
+								</li>
+								<li>
+									<p class="c-text__career">1996年</p>
+									<p class="c-text__career">世界陸上パリ大会</p>
+									<p class="c-text__career">マラソン</p>
+									<p class="c-text__career">３位</p>
+								</li>
+							</ul>
+							<div class="c-block__profile">
+								<p class="c-text__profile">世界初の世界陸上女子トラックと女子マラソンでの異種目複数メダル獲得など、数々の好成績を残した。</p>
+								<p class="c-text__profile">2006年に引退した後も「スポーツで世の中を元気にしたい」という目標の下、全国のマラソン大会にゲストとして参加するほか、市民ランナーの指導なども積極的に行っている。</p>
+								<p class="c-text__profile">2012年の初回大会から6大会連続でオフィシャルアドバイザー（旧：PR大使）に就任。</p>
+								<p class="c-text__profile">前回大会では、SNSを通じて大会の魅力を大いに発信したほか、大会当日のスタートセレモニーやトークショー、表彰式に出演し持ち前の明るさで大会を大いに盛り上げた。</p>
+							</div>
+						</div>
+					</div>
+					<div class="c-block__message">
+						<h4 class="c-heading__message"><img src="/public/images/tournament/heading_message.svg" alt="大会へのメッセージ"></h4>
+						<div class="c-inner__message">
+							<p class="c-text__message">何と！あのアクアラインを通行止めし、海と空の大パノラマを走りながら堪能出来る特別な大会【ちばアクアラインマラソン2026】の開催が決定しました。「スポーツ振興」と「千葉の魅力発信」を二本柱とし、お陰様で７度目の開催となります。県民の皆様いつもご協力有難うございます。</p>
+							<p class="c-text__message">前回はハーフマラソンの当選倍率が2.9倍と大人気で、今回は先着エントリー方式に変わり大会前から熱き戦いが始まりそうです。また様々な事前イベントもある為こまめに公式HP、SNSをチェックするのもオススメです。「さぁ〜挑戦こそ人生の醍醐味だ！」走る人、支える人、応援する人が…様々な立場で自分らしく輝いてみよう。L E T′S　Ｃｈａｌｌｅｎｇｅ！！</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<%- include("src/include/subColumn.html") %>
+		</div>
+	</section>
+	</main>
+	<%- include("src/include/footer.html") %>	
+	<script type="module" src="/src/main.js"></script>
+</body>
+</html>
