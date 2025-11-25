@@ -1,0 +1,12 @@
+@use '../../variables' as *;
+@use '../../mixins' as *;
+
+.p-ambassador {
+	&__image {
+		img {
+			@include respond-to() {
+				top: -10.5%;
+			}
+		}
+	}
+}

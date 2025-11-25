@@ -155,6 +155,14 @@
 		z-index: 1;
 		background-color: $color-container-light-blue;
 
+		@include respond-to() {
+			width: 70%;
+			max-width: none;
+			min-width: 272px;
+			display: block;
+			margin: 0 auto -14px;
+		}
+
 		img {
 			width: 100%;
 		}
@@ -223,9 +231,18 @@
 			margin-bottom: 32px;
 			font-size: 32px;
 			font-weight: bold;
+
+			@include respond-to() {
+				margin-bottom: 16px;
+				font-size: 24px;
+			}
 	
 			span {
 				font-size: 24px;
+
+				@include respond-to() {
+					font-size: 20px;
+				}
 			}
 		}
 
@@ -319,10 +336,49 @@
 
 	&__member {
 		flex: 1 0.5 236px;
+
+		@include respond-to() {
+			margin-bottom: 16px;
+			flex: 1 1 auto;
+			padding-bottom: calc((252 / 313) * 100%);
+			position: relative;
+			overflow: hidden;
+		}
+
+		img {
+			width: 100%;
+
+			@include respond-to() {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+
 	}
 
 	&__ambassador {
 		flex: 1 0.5 200px;
+
+		@include respond-to() {
+			flex: 1 1 auto;
+		}
+
+		img {
+			width: 100%;
+
+			&.is-sp {
+				display: none;
+			}
+
+			@include respond-to() {
+				display: none;
+
+				&.is-sp {
+					display: block;
+				}
+			}
+		}
 	}
 
 	&__guideline {
@@ -1146,13 +1202,18 @@
 		border-top: 1px dashed $color-main-blue;
 		border-bottom: 1px dashed $color-main-blue;
 
+		@include respond-to() {
+			margin-bottom: 16px;
+			padding: 8px 0;
+		}
+
 		li {
 			margin-bottom: 8px;
 			font-size: 16px;
 			line-height: 1.6;
 			display: flex;
 			flex-wrap: wrap;
-			gap: 16px;
+			column-gap: 16px;
 
 			&:last-child {
 				margin-bottom: 0;
@@ -1286,6 +1347,10 @@
 			a {
 				color: $color-main-blue;
 			}
+
+			@include respond-to() {
+				margin-top: -46px;
+			}
 		}
 
 		a {
@@ -1331,6 +1396,10 @@
 		font-size: 16px;
 		line-height: 1.6;
 
+		@include respond-to() {
+			font-size: 14px;
+		}
+
 		&:last-child {
 			margin-bottom: 0;
 		}
@@ -1346,7 +1415,7 @@
 		}
 
 		&--translation {
-			font-size: 14px;
+			font-size: 12px;
 			line-height: 1.4;
 		}
 	}
@@ -1579,12 +1648,21 @@
 		margin-bottom: 24px;
 		display: flex;
 		gap: 32px;
+
+		@include respond-to() {
+			margin-bottom: 10px;
+			flex-direction: column;
+		}
 	}
 
 	&__ambassador {
 		margin-bottom: 32px;
 		display: flex;
 		gap: 24px;
+
+		@include respond-to() {
+			flex-direction: column;
+		}
 	}
 }
 
@@ -1603,6 +1681,10 @@
 	
 	&__member {
 		flex: 1 1 718px;
+
+		@include respond-to() {
+			flex: 1 1 auto;
+		}
 	}
 }
 
@@ -1612,6 +1694,10 @@
 		border: 1px solid $color-main-blue;
 		border-radius: 16px;
 		position: relative;
+
+		@include respond-to() {
+			padding: 24px 16px 16px;
+		}
 
 		&::before {
 			content: "";
