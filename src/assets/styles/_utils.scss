@@ -12,3 +12,11 @@
 .u-mb-0 {
 	margin-bottom: 0;
 }
+
+.u-sp {
+	display: none !important;
+
+	@include respond-to() {
+		display: block !important;
+	}
+}

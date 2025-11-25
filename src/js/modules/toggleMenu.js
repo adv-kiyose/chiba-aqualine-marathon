@@ -23,6 +23,7 @@ export function initToggleMenu() {
 		const resetOpenMenu = () => {
 			headerNavigation.classList.remove('is-open');
 			toggleMenuButton.classList.remove('is-open');
+			root.classList.remove('is-open');
 		}
 
 		toggleMenuButton.addEventListener('click', toggleMenu);

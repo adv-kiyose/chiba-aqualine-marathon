@@ -22,7 +22,7 @@
 	&__block {
 		&--upper {
 			width: 100%;
-			height: 70px;
+			height: 60px;
 			display: flex;
 			justify-content: flex-start;
 			align-items: center;
@@ -35,39 +35,71 @@
 		}
 
 		&--bottom {
-			height: 80px;
+			height: 56px;
 			padding-left: 24px;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
 
 			@include respond-to() {
-				height: 63px;
-				justify-content: flex-end;
-				gap: 16px;
+				width: 100%;
+				height: calc(100dvh - 50px);
+				display: block;
+				padding: 0;
+				position: absolute;
+				top: 50px;
+				overflow: hidden;
 			}
 		}
 	}
 
 	&__logo {
+		height: 100%;
+		padding: 0 38px 0 12px;
 		justify-self: flex-start;
-		flex: 0 0 157px;
+		flex: 0 0 119px;
+
+		display: flex;
+		align-items: center;
+		position: relative;
 
 		@include respond-to() {
-			flex-basis: 108px;
+			padding: 0 30px 0 8px;
+			flex-basis: 107px;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			right: 0px;
+			border-bottom: 60px $color-main-blue solid;
+			border-left: 20px transparent solid;
+			display: block;
+			width: 0;
+			height: 0;
 		}
 	}
 
 	&__sns {
+		position: absolute;
+		top: 8px;
+		right: 0;
+
 		@include respond-to() {
-			position: absolute;
-			top: 67px;
-			left: 16px;
 		}
 	}
 
 	&__button--language {
 		text-align: right;
+	}
+
+	&__entry {
+		@include respond-to() {
+			position: fixed;
+			left: 20px;
+			bottom: 10px;
+		}
 	}
 }
 
@@ -211,6 +243,10 @@
 		padding: 10px;
 		background-color: $color-logo-blue;
 		text-align: center;
+
+		@include respond-to() {
+			padding-bottom: 150px;
+		}
 	}
 }
 
