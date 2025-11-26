@@ -6,7 +6,7 @@ export function initFadeInContainer() {
 		if(contentContainers.length <= 0) { return; }
 
 		const observerOptions = {
-			threshold: 0.15 // 15%見えているとき
+			rootMargin: '-15% 0px -15% 0px' // 15%見えているとき
 		}
 
 		const observer = new IntersectionObserver((entries, obs) => {
@@ -14,7 +14,7 @@ export function initFadeInContainer() {
 				if(entry.isIntersecting && !entry.target.classList.contains('is-visible')) {
 					entry.target.classList.add('is-visible');
 					// クラス追加後は不要となるため監視を解除
-					obs.unobserve();
+					obs.unobserve(entry.target);
 				}
 			});
 		}, observerOptions);
