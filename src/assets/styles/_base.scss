@@ -17,6 +17,11 @@ body {
 	line-height: 1.6;
 }
 
+.is-open body {
+	position: relative;
+}
+
+
 :target {
 	scroll-margin-top: 160px;
 

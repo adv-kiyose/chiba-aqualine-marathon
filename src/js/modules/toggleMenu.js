@@ -6,6 +6,8 @@ export function initToggleMenu() {
 		const headerNavigation = document.querySelector('.c-navigation__header--wrapper');
 		const root = document.querySelector('html');
 
+		let tempScrollY = 0; // メニュー展開時、スクロール位置を保存
+
 		if (!headerNavigation) return;
 
 		const toggleMenu = () => {
@@ -13,7 +15,12 @@ export function initToggleMenu() {
 				headerNavigation.classList.remove('is-open');
 				toggleMenuButton.classList.remove('is-open');
 				root.classList.remove('is-open');
+				document.body.style.top = '';
+				window.scrollTo(0, tempScrollY);
 			} else {
+				tempScrollY = window.scrollY;
+
+				document.body.style.top = `-${tempScrollY}px`;
 				headerNavigation.classList.add('is-open');
 				toggleMenuButton.classList.add('is-open');
 				root.classList.add('is-open');
@@ -24,7 +31,10 @@ export function initToggleMenu() {
 			headerNavigation.classList.remove('is-open');
 			toggleMenuButton.classList.remove('is-open');
 			root.classList.remove('is-open');
-		}
+
+			document.body.style.top = '';
+			window.scrollTo(0, tempScrollY);
+	}
 
 		toggleMenuButton.addEventListener('click', toggleMenu);
 
