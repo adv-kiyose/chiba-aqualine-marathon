@@ -45,3 +45,33 @@
 		background-size: contain;
 	}
 }
+
+// wovnテキスト切り替え
+.wovn-languages ul {
+	display: flex;
+	list-style: none;
+	gap: 5px;
+
+	@include respond-to() {
+		justify-content: center;
+	}
+}
+.wovn-languages li {
+	padding: 0 10px;
+	font-size: 16px;
+	color: $color-white;
+	cursor: pointer;
+
+	@include respond-to() {
+		color: #000;
+	}
+}
+.wovn-languages li + li {
+	border-left: 1px solid;
+}
+.wovn-languages li.selected {
+	font-weight: bold;
+}
+.wovn-languages li.wovn-switch:hover {
+	text-decoration: underline;
+}

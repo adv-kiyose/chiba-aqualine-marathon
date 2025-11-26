@@ -89,11 +89,20 @@
 		right: 0;
 
 		@include respond-to() {
+			position: static;
+			margin-bottom: 32px;
 		}
 	}
 
 	&__button--language {
+		position: absolute;
+		top: 20px;
+		right: 178px;
 		text-align: right;
+
+		@include respond-to() {
+			position: static;
+		}
 	}
 
 	&__entry {
