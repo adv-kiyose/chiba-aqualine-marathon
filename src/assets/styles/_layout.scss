@@ -124,6 +124,41 @@
 	}
 }
 
+.l-breadclumb {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 8px 24px;
+
+	@include respond-to() {
+		display: none;
+	}
+
+	ul {
+		display: flex;
+		gap: 8px;
+	}
+
+	li {
+		font-size: 16px;
+		color: $color-breadclumb-gray;
+
+		&::after {
+			content: '>';
+			margin-left: 8px;
+		}
+
+		&:last-child::after {
+			content: none;
+		}
+	}
+
+	a {
+		color: $color-main-blue;
+		text-decoration: underline;
+	}
+
+}
+
 .l-footer {
 	&__container {
 		&--main {
