@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ja_JP">
+<head>
+		<%
+			const title = "スポンサー";
+			const path="tournament/sponsor.html" 
+			const description="2026年11月8日開催！ちばアクアラインマラソン2026ではスポンサー大募集中です。海ほたるの青く雄大な空と海に囲まれた景色の中や、千葉の田園を、市民ランナーが走ります。"
+		%>
+		<%- include("src/include/head.ejs", {title, path, description}) %>
+</head>
+<body class="l-guideline">
+	<%- include("src/include/header.html") %>
+	<main class="l-main">
+	<section class="l-heading p-top__heading">
+		<div class="c-heading__container--main">
+			<h2 class="c-heading__main">スポンサー</h2>
+		</div>
+	</section>
+	<div class="l-breadclumb">
+		<ul>
+			<li><a href="/">トップ</a></li>
+			<li>大会情報</li>
+			<li>スポンサー</li>
+		</ul>
+	</div>
+
+	<section class="l-content">
+		<div class="l-content__inner">
+		<div class="l-column__main">
+			<section class="c-container">
+				<h3 class="c-heading__info">スポンサー</h3>
+				<div class="p-sponsor__container">
+					<h4 class="c-heading__guideline">オフィシャルスポンサー</h4>
+					<!--<ul class="p-sponsor__list p-sponsor__list--official" data-grade="silver">
+						<li class="p-sponsor__item p-sponsor__item--official">
+							<p class="p-sponsor__name--official">株式会社JTB</p>
+							<div class="p-sponsor__block--logo"><p class="p-sponsor__logo" data-micromodal-trigger="sponsor_s01"><img src="/public/images/tournament/sponsor/bnr_sponsor_jtb.webp" alt="ロゴ：株式会社JTC"></p></div>
+							<p class="p-sponsor__link--open-modal"><a data-micromodal-trigger="sponsor_s01">詳細へ</a></p>
+						</li>
+					</ul>-->
+
+					<ul class="p-sponsor__list p-sponsor__list--official" data-grade="bronse">
+						<li class="p-sponsor__item p-sponsor__item--official">
+							<p class="p-sponsor__name--official">株式会社JTB</p>
+							<div class="p-sponsor__block--logo"><p class="p-sponsor__logo" data-micromodal-trigger="sponsor_b01"><img src="/public/images/tournament/sponsor/bnr_sponsor_jtb.webp" alt="ロゴ：株式会社JTC"></p></div>
+							<p class="p-sponsor__link--open-modal"><a data-micromodal-trigger="sponsor_b01">詳細へ</a></p>
+						</li>
+						<li class="p-sponsor__item p-sponsor__item--official">
+							<p class="p-sponsor__name--official">千葉テレビ放送株式会社</p>
+							<div class="p-sponsor__block--logo"><p class="p-sponsor__logo"><a href="https://www.chiba-tv.com/" target="_blank"><img src="/public/images/tournament/sponsor/bnr_sponsor_chibatv.svg" alt="ロゴ：千葉テレビ放送株式会社"></a></p></div>
+						</li>
+						<li class="p-sponsor__item p-sponsor__item--official">
+							<p class="p-sponsor__name--official">株式会社フォトクリエイト</p>
+							<div class="p-sponsor__block--logo"><p class="p-sponsor__logo" data-micromodal-trigger="sponsor_b03"><img src="/public/images/tournament/sponsor/bnr_sponsor_photocreate.webp" alt="ロゴ：株式会社フォトクリエイト"></p></div>
+							<p class="p-sponsor__link--open-modal"><a data-micromodal-trigger="sponsor_b03">詳細へ</a></p>
+						</li>
+					</ul>
+				</div>
+				<div class="p-sponsor__container">
+					<h4 class="c-heading__guideline">サポーティングスポンサー</h4>
+					<!--<ul class="p-sponsor__list p-sponsor__list--support">
+						<li class="p-sponsor__item">
+							<div class="p-sponsor__block--logo"><p class="p-sponsor__logo"><img src="/public/images/tournament/sponsor/bnr_sponsor_jtb.webp" alt="ロゴ：社名ダミー"></p></div>
+							<p class="p-sponsor__link"><a href="#" target="_blank">社名ダミー社名ダミー社名ダミー</a></p>
+						</li>
+					</ul>-->
+					<ul class="p-sponsor__list p-sponsor__list--support">
+						<li class="p-sponsor__item">
+							<p class="p-sponsor__link p-sponsor__link--text-only"><a href="https://www.echiba.org/" target="_blank">公益財団千葉県教育振興財団</a></p>
+						</li>
+						<li class="p-sponsor__item">
+							<p class="p-sponsor__link p-sponsor__link--text-only"><a href="http://chiba-gyoren.or.jp/" target="_blank">千葉県漁業協同組合連合会</a></p>
+						</li>
+					</ul>
+					<ul class="p-sponsor__list p-sponsor__list--support">
+						<li class="p-sponsor__item">
+							<p class="p-sponsor__link p-sponsor__link--text-only">公益財団千葉県教育振興財団</p>
+						</li>
+						<li class="p-sponsor__item">
+							<p class="p-sponsor__link p-sponsor__link--text-only">JNC石油化学株式会社市原製造所</p>
+						</li>
+						<li class="p-sponsor__item">
+							<p class="p-sponsor__link p-sponsor__link--text-only">一般社団法人千葉県産業資源循環協会</p>
+						</li>
+						<li class="p-sponsor__item">
+							<p class="p-sponsor__link p-sponsor__link--text-only">一般財団法人千葉県まちづくり公社</p>
+						</li>
+						<li class="p-sponsor__item">
+							<p class="p-sponsor__link p-sponsor__link--text-only">千葉石油株式会社</p>
+						</li>
+						<li class="p-sponsor__item">
+							<p class="p-sponsor__link p-sponsor__link--text-only">マザー牧場株式会社</p>
+						</li>
+						<li class="p-sponsor__item">
+							<p class="p-sponsor__link p-sponsor__link--text-only">一般社団法人生命保険協会千葉県協会</p>
+						</li>
+						<li class="p-sponsor__item">
+							<p class="p-sponsor__link p-sponsor__link--text-only">公益社団法人千葉県医師会</p>
+						</li>
+						<li class="p-sponsor__item">
+							<p class="p-sponsor__link p-sponsor__link--text-only">公益社団法人千葉県観光物産協会</p>
+						</li>
+						<li class="p-sponsor__item">
+							<p class="p-sponsor__link p-sponsor__link--text-only">学校法人千葉経済学園</p>
+						</li>
+						<li class="p-sponsor__item">
+							<p class="p-sponsor__link p-sponsor__link--text-only">一般社団法人千葉県経済協議会</p>
+						</li>
+						<li class="p-sponsor__item">
+							<p class="p-sponsor__link p-sponsor__link--text-only">千葉県経済同友会</p>
+						</li>
+						<li class="p-sponsor__item">
+							<p class="p-sponsor__link p-sponsor__link--text-only">千葉県建設防水工事業協同組合</p>
+						</li>
+						<li class="p-sponsor__item">
+							<p class="p-sponsor__link p-sponsor__link--text-only">千葉県循環リサイクル事業協同組合連合会</p>
+						</li>
+						<li class="p-sponsor__item">
+							<p class="p-sponsor__link p-sponsor__link--text-only">千葉県商工会連合会</p>
+						</li>
+						<li class="p-sponsor__item">
+							<p class="p-sponsor__link p-sponsor__link--text-only">一般社団法人千葉県電業協会</p>
+						</li>
+						<li class="p-sponsor__item">
+							<p class="p-sponsor__link p-sponsor__link--text-only">公益財団ちば県民保健予防財団</p>
+						</li>
+						<li class="p-sponsor__item">
+							<p class="p-sponsor__link p-sponsor__link--text-only">一般社団法人千葉県薬剤師会</p>
+						</li>
+						<li class="p-sponsor__item">
+							<p class="p-sponsor__link p-sponsor__link--text-only">ホテルポートプラザちば</p>
+						</li>
+					</ul>
+				</div>
+				<div class="p-sponsor__block--sponsorship">
+					<a href="/tournament/sponsorship.html">
+						<p class="p-sponsor__sponsorship--sub">ちばアクアラインマラソン2026</p>
+						<p class="p-sponsor__sponsorship--main">スポンサー大募集！</p>
+					</a>
+				</div>
+			</section>
+		</div>
+			<%- include("src/include/subColumn.html") %>
+		</div>
+	</section>
+
+	<!-- モーダル -->
+	<!-- ブロンズ -->
+	<div class="p-sponsor__modal" id="sponsor_b01" area-hidden="true">
+		<div class="p-sponsor__modal--overlay" tabindex="1"></div>
+		<div class="p-sponsor__modal--container" aria-modal="true" data-micromodal-close>
+			<div class="p-sponsor__modal--inner">
+				<a class="p-sponsor__button--close" data-micromodal-close></a>
+				<p class="p-sponsor__logo--modal"><img src="/public/images/tournament/sponsor/bnr_sponsor_jtb.webp" alt=""></p>
+				<div class="p-sponsor__block--name-modal">
+					<h5 class="p-sponsor__text--name-modal">株式会社JTB</h5>
+					<p class="p-sponsor__button--modal-link"><a href="https://branch.jtbbwt.com/j3358-0" target="_blank">Webサイト</a></p>
+				</div>
+				<div class="p-sponsor__comment--modal">
+					<p>私たちJTBは、ブランドスローガン「感動のそばに、いつも。」のもと、地球を舞台に自然、文化、歴史とのふれあいや人々の交流を創造し、お客様にとっての感動や喜びと成果の実現を追求しています。また、お客様と共に歩んできた100年を大切にし、これからも「価値ある出会い」を創造し続け、サステナブルな社会の発展への貢献活動の一環として、「ちばアクアラインマラソン2026」をサポートして参ります。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="p-sponsor__modal" id="sponsor_b03" area-hidden="true">
+		<div class="p-sponsor__modal--overlay" tabindex="1"></div>
+		<div class="p-sponsor__modal--container" aria-modal="true" data-micromodal-close>
+			<div class="p-sponsor__modal--inner">
+				<a class="p-sponsor__button--close" data-micromodal-close></a>
+				<p class="p-sponsor__logo--modal"><img src="/public/images/tournament/sponsor/bnr_sponsor_photocreate.webp" alt=""></p>
+				<div class="p-sponsor__block--name-modal">
+					<h5 class="p-sponsor__text--name-modal">株式会社フォトクリエイト</h5>
+					<p class="p-sponsor__button--modal-link"><a href="https://allsports.jp/event/01591192.html" target="_blank">Webサイト</a></p>
+				</div>
+				<div class="p-sponsor__comment--modal">
+					<p>スポーツ写真サイト・オールスポーツコミュニティを運営する株式会社フォトクリエイトです。<br>
+						「感動をカタチにしてすべての人へ」<br>
+						人生のかがやきの瞬間を写真というカタチにして皆さまへお届けいたします。<br>
+						私たちは一枚一枚の"良い写真"にこだわるだけでなく、"ストーリー"として提案し、フォトライフ構想の実現を目指していきます。<br>
+						それぞれの目標をもってちばアクアラインマラソンに参加されるランナー、そして大会に関わる全ての人を応援いたします。大会を楽しみながら、素敵なお写真をたくさん残して頂ければ幸いです！</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // ブロンズ -->
+	<!-- // モーダルここまで -->
+	</main>
+	<%- include("src/include/footer.html") %>	
+	<script type="module" src="/src/main.js"></script>
+</body>
+</html>

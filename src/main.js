@@ -8,6 +8,7 @@ import { loadNews } from './js/modules/newsList.js';
 import { initCountdown } from './js/modules/countdown.js';
 import { initFacebook } from './js/modules/fb.js';
 import { initFadeInContainer } from './js/modules/fadeInContainer.js';
+import { initOpenModal } from './js/modules/openModal.js';
 import ScrollHint from 'scroll-hint';
 import 'scroll-hint/css/scroll-hint.css';
 
@@ -56,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	initScrollTop();
 	loadNews();
 	initCountdown();
+	initOpenModal();
 	new ScrollHint('.js-scrollable');
 
 	if(window.FB) {

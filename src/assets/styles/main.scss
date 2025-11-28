@@ -6,5 +6,6 @@
 @use 'utils' as *;
 
 @use 'page/top' as *;
-@use 'page/sponsorship' as *;
+@use 'page/tournament/sponsorship' as *;
+@use 'page/tournament/sponsor' as *;
 @use 'page/tournament/official' as *;

@@ -1130,12 +1130,16 @@
 	}
 
 	&__sponsor {
+		padding-bottom: 16px;
+		border-bottom: 1px dashed $color-main-blue;
+		
 		@include respond-to() {
 			display: none;
+			border-bottom: none;
 		}
 
 		li {
-			margin-bottom: 10px;
+			margin-bottom: 8px;
 
 			&:last-child {
 				margin-bottom: 0;
@@ -1143,6 +1147,8 @@
 		}
 
 		&--sp {
+			padding-bottom: 16px;
+			border-bottom: 1px dashed $color-main-blue;
 			display: none !important;
 
 			@include respond-to() {
@@ -1156,7 +1162,17 @@
 		}
 
 		a {
+			padding: 20px 10px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: $color-white;
 			@include hover-opacity;
+
+			img {
+				width: calc(100% - 20px);
+				margin: 0 auto;
+			}
 		}
 	}
 
@@ -1701,7 +1717,12 @@
 		&--sponsor {
 			display: flex;
 			justify-content: space-between;
-			gap: 10px;
+			gap: 8px;
+
+			a {
+				flex: 0 0 calc((100% - 8px) / 2);
+				background-color: $color-white;
+			}
 		}
 	}
 

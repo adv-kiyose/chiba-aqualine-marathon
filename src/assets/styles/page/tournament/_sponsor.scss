@@ -1,0 +1,368 @@
+@use '../../variables' as *;
+@use '../../mixins' as *;
+
+$modal-inner-width: 724px; // モーダル内コンテンツの最大幅
+
+.p-sponsor {
+    .c-heading__info + &__container {
+        margin-top: -22px;
+
+        @include respond-to() {
+            margin-top: -46px;
+        }
+    }
+
+    &__container {
+        margin-bottom: 64px;
+
+        @include respond-to() {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__list {
+        margin-bottom: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+
+        @include respond-to() {
+            margin-bottom: 30px;
+            gap: 10px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &--support {
+            margin-bottom: 40px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__item {
+        flex: 0 0 calc((100% - 32px) / 3);
+
+        @include respond-to($break-pc-max) {
+            flex: 0 0 calc((100% - 16px) / 2);
+        }
+
+        @include respond-to() {
+            flex: 0 0 100%;
+        }
+    }
+
+    &__modal {
+        visibility: hidden;
+        position: relative;
+        z-index: 2000;
+        transition: visibility $fade-spd-default ease;
+
+        &--overlay {
+            width: 100vw;
+            height: 100dvh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity $fade-spd-default ease;
+        }
+
+        &--container {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: scale(0.95);
+            transform-origin: center;
+            opacity: 0;
+            transition: opacity $fade-spd-default ease, transform $fade-spd-default ease-out;
+        }
+
+        &.is-open {
+            visibility: visible;
+
+            .p-sponsor__modal--overlay {
+                opacity: 1;
+            }
+
+            .p-sponsor__modal--container {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        &--inner {
+            width: 844px;
+            max-width: calc(100% - 40px);
+            max-height: calc(100% - 40px);
+            margin: 20px;
+            padding: 80px 20px 20px;
+            max-width: calc(100% - 40px);
+            background: $color-white;
+            position: relative;
+            border-radius: 10px;
+            overflow: auto;
+        }
+    }
+
+    &__block {
+        &--logo {
+            margin-bottom: 8px;
+            width: 100%;
+            height: 0;
+            padding-bottom: calc((140 / 312) * 100%);
+            position: relative;
+            background-color: $color-white;
+        }
+
+        &--name-modal {
+            max-width: $modal-inner-width;
+            margin: 0 auto 30px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid $color-main-blue;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &--sponsorship {
+            position: relative;
+            background: url(@/assets/images/pages/sponsor/bg_bnr_sopnsor.webp) center no-repeat;
+            background-size: cover;
+
+            @include respond-to() {
+                background-image: url(@/assets/images/pages/sponsor/bg_bnr_sopnsor_sp.webp);
+                background-position: top center;
+            }
+
+            a {
+                padding: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 16px;
+
+                @include respond-to() {
+                    padding: 16px;
+                    gap: 8px;
+                }
+
+            }
+        }
+    }
+
+    &__sponsorship {
+        &--main {
+            font-size: clamp(36px, 4.0vw, 40px);
+            line-height: 1;
+            font-weight: bold;
+            color: $color-white;
+            font-family: $font-outfit;
+
+            @include respond-to() {
+                font-size: 24px;
+            }
+        }
+
+        &--sub {
+                font-size: clamp(20px, 2.4vw, 24px);
+                line-height: 1;
+                font-weight: bold;
+                color: $color-white;
+                font-family: $font-outfit;
+        
+                @include respond-to() {
+                    font-size: 16px;
+                }
+        }
+    }
+
+    &__button {
+        &--close {
+            width: 50px;
+            height: 50px;
+            background: url(@/assets/images/pages/sponsor/btn_close.svg) center no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+        &--modal-link {
+            a {
+                padding: 8px 15px;
+                color: $color-white;
+                background-color: $color-main-blue;
+                border-radius: 50px;
+                display: flex;
+                align-items: center;
+                font-size: 12px;
+                font-weight: bold;
+                gap: 4px;
+
+                &::before {
+                    content: "";
+                    width: 14px;
+                    height: 14px;
+                    background: url(@/assets/images/pages/sponsor/icon_web.svg) center no-repeat;
+                    background-size: contain;
+                }
+            }
+
+        }
+    }
+
+    &__logo {
+        width: 100%;
+        height: 100%;
+        padding: 25px 27px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        a {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        &--modal {
+            max-width: $modal-inner-width;
+            height: 130px;
+            margin: 0 auto 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+    
+    &__text {
+        &--name-modal {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+
+    &__link {
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            color: $color-main-blue;
+            text-decoration: underline;
+            cursor: pointer;
+
+            &::after {
+                content: "";
+                width: 18px;
+                height: 18px;
+                display: block;
+                background: url(@/assets/images/utils/icon_arrow.svg) center no-repeat;
+                background-size: cover;
+                position: relative;
+                top: 1px;
+            }
+        }
+
+        &--text-only {
+            line-height: 1.6;
+
+            a {
+                font-weight: bold;
+            }
+        }
+
+        &--open-modal {
+            font-size: 16px;
+            line-height: 1.4;
+            text-align: right;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                color: $color-main-blue;
+                text-decoration: underline;
+                cursor: pointer;
+                
+                &::after {
+                    content: "";
+                    width: 18px;
+                    height: 18px;
+                    display: block;
+                    background: url(@/assets/images/utils/icon_arrow.svg) center no-repeat;
+                    background-size: cover;
+                    position: relative;
+                    top: 1px;
+                }
+            }
+
+        }
+    }
+
+    &__name {
+        &--official {
+            margin-bottom: 9px;
+            font-size: 16px;
+            line-height: 1.6;
+            display: flex;
+            gap: 3px;
+            font-weight: 500;
+
+            &::before {
+                content: "";
+                width: 14px;
+                height: 20px;
+                display: block;
+                background: url(@/assets/images/pages/sponsor/icon_official.svg) center no-repeat;
+                background-size: contain;
+                position: relative;
+                top: 3px;
+            }
+        }
+    }
+
+    &__comment {
+        &--modal {
+            max-width: $modal-inner-width;
+            margin: 0 auto 20px;
+            font-size: 14px;
+            line-height: 1.6;
+
+            p {
+                margin-bottom: 20px;
+
+                &:last-child {
+                    margin-bottom: 40px;
+                }
+            }
+
+        }
+    }
+}
