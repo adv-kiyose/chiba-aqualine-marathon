@@ -100,11 +100,15 @@ html[lang=en] {
 	.p-top {
 		&__countdown {
 			&--unit {
-				font-size: clamp(12px, 3vw, 16px);
+				@include respond-to() {
+					font-size: clamp(12px, 3vw, 16px);
+				}
 			}
 
 			&--number {
-				font-size: clamp(18px, 6vw, 30px);
+				@include respond-to() {
+					font-size: clamp(18px, 6vw, 30px);
+				}
 			}
 		}
 	}
