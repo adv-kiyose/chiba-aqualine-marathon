@@ -10,7 +10,9 @@ const list = document.querySelector('.c-list__news--list');
 
 export async function loadNews() {
 	try {
-	const response = await fetch('/data/news.json'); // baseパス考慮
+	const response = await fetch('/data/news.json', {
+		cache: 'no-store'
+	  }); // baseパス考慮
 	const newsItems = await response.json();
 	if (!list) return;
 

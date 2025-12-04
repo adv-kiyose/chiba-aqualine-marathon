@@ -247,8 +247,8 @@
 		}
 
 		&--ambassador {
-			margin-bottom: 16px;
 			font-size: 20px;
+			line-height: 1;
 			font-weight: 500;
 
 			span {
@@ -261,11 +261,12 @@
 
 	&__position {
 		&--ambassador {
-			margin-bottom: 16px;
+			margin-bottom: 8px;
 			display: flex;
 			align-items: center;
 			gap: 8px;
 			font-size: 20px;
+			line-height: 1;
 			font-weight: 500;
 
 			&::before {
@@ -287,7 +288,6 @@
 .c-image {
 	&__logo {
 		&--header {
-			width: 69px;
 			background-color: $color-white;
 
 			img {
@@ -1016,6 +1016,28 @@
 		.instagram .block-timeline {
 			border: 1px solid #efefef;
 		}
+
+		&--ambassador {
+			display : flex;
+			gap: 16px;
+			align-items: center;
+
+			li {
+				width: 30px;
+
+				&.yt {
+					width: 34px;
+				}
+
+				&.x {
+					width: 27px;
+				}
+
+				img {
+					width: 100%;
+				}
+			}
+		}
 	}
 
 	&__sns--header {
@@ -1708,6 +1730,21 @@
 
 		@include respond-to() {
 			flex-direction: column;
+		}
+	}
+
+	&__name {
+		&--ambassador {
+			margin-bottom: 16px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 16px;
+
+			@include respond-to() {
+				flex-direction: column;
+				align-items: flex-start;
+			}
 		}
 	}
 }
