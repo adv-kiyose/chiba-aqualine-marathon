@@ -65,4 +65,14 @@ const renderNews = (items) => {
 		</div>
 	</li>
 	`).join('');
+
+	list.querySelectorAll('a').forEach(a => {
+		const link = a.getAttribute('href') || '';
+		const isAbsolute = /^https?:\/\//i.test(link);
+
+		if (isAbsolute) {
+			a.setAttribute('target', '_blank');
+			a.classList.add('is-external');
+		}
+	});
 }

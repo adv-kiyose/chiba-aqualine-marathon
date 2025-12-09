@@ -1,8 +1,14 @@
 [
 	{
-	"date": "2025.10.20",
-	"tags": ["大会情報"],
-	"text": "「ちばアクアラインマラソン2026」大会要項決定！",
-	"link": "/tournament/"
+		"date": "2025.12.10",
+		"tags": ["イベント・応援"],
+		"text": "「ちばアクアラインマラソンオフィシャルロゴ」をご利用したい方へ",
+		"link": "https://www.pref.chiba.lg.jp/shousupo/aqua/aqua2026/chibaaqua-logo-riyou.html"
+	},
+	{
+		"date": "2025.10.20",
+		"tags": ["大会情報"],
+		"text": "「ちばアクアラインマラソン2026」大会要項決定！",
+		"link": "/tournament/"
 	}
 ]
