@@ -1493,6 +1493,27 @@
 		&:last-child {
 			margin-bottom: 0;
 		}
+
+		a {
+			color: $color-main-blue;
+			text-decoration: underline;
+
+			&[target="_blank"] {
+				display: flex;
+				align-items: center;
+
+				&::after {
+					content: "";
+					display: inline-block;
+					margin-left: 5px;
+					width: 17px;
+					height: 17px;
+					background-image: url(@/assets/images/utils/icon_link_tab.svg);
+					background-size: contain;
+					filter: invert(89%) sepia(83%) saturate(7500%) hue-rotate(238deg) brightness(104%) contrast(103%);
+				}
+			}
+		}
 	}
 
 	&__message {
