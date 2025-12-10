@@ -233,12 +233,11 @@ $modal-inner-width: 724px; // モーダル内コンテンツの最大幅
         display: flex;
         align-items: center;
         justify-content: center;
-        cursor: pointer;
 
         a {
             width: 100%;
             height: 100%;
-            display: flex;
+            display: inline-flex;
             align-items: center;
             justify-content: center;
         }
