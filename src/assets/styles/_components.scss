@@ -145,6 +145,46 @@
 		}
 	}
 
+	&__wrap {
+		&--sign {
+			margin: 0 auto 48px;
+			display: flex;
+			justify-content: center;
+
+			@include respond-to {
+				margin-bottom: 24px;
+			}
+		}
+	}
+
+	&__sign {
+		font-size: 32px;
+		font-weight: bold;
+		color: $color-main-blue;
+		text-align: center;
+		position: relative;
+
+		@include respond-to {
+			font-size: 28px;
+		}
+
+		&::before {
+			content: "";
+			width: 19px;
+			height: 22px;
+			display: inline-block;
+			background: url(@/assets/images/utils/icon_comic_sign.svg) center no-repeat;
+			position: absolute;
+			left: -18px;
+			top: -5px;
+
+			@include respond-to {
+				left: -11px;
+				top: -4px;
+			}
+		} 
+	}
+
 	&__message {
 		max-width: 50%;
 		display: inline-block;
@@ -209,7 +249,7 @@
 	&__container {
 		&--main {
 			height: 138px;
-			background: url(@/assets/images/utils/bg_heading.jpg) center center no-repeat;
+			background: url(@/assets/images/utils/bg_title.webp) center center no-repeat;
 			background-size: cover;
 			display: flex;
 			align-items: center;
@@ -221,7 +261,8 @@
 
 			@include respond-to() {
 				height: 94px;
-				background-size: auto 94px;
+				background-image: url(@/assets/images/utils/bg_title_sp.webp);
+				background-size: cover;
 			}
 		}
 	}
@@ -656,8 +697,8 @@
 
 			&::after {
 				content: "";
-				width: 28px;
-				height: 28px;
+				width: 20px;
+				height: 20px;
 				display: block;
 				background: url(@/assets/images/utils/icon_link_arrow.svg) center no-repeat;
 				background-size: contain;
@@ -1446,6 +1487,16 @@
 		a {
 			color: $color-main-blue;
 		}
+
+		&--entry {
+			font-size: 20px;
+			font-weight: 600;
+			text-align: center;
+
+			a {
+				color: $color-main-blue;
+			}
+		}
 	}
 
 	&__address {
@@ -1506,11 +1557,11 @@
 					content: "";
 					display: inline-block;
 					margin-left: 5px;
-					width: 17px;
-					height: 17px;
+					width: 15px;
+					height: 15px;
 					background-image: url(@/assets/images/utils/icon_link_tab.svg);
 					background-size: contain;
-					filter: invert(89%) sepia(83%) saturate(7500%) hue-rotate(238deg) brightness(104%) contrast(103%);
+					filter: $filter-white-to-blue;
 				}
 			}
 		}
@@ -1683,8 +1734,8 @@
 				&::after {
 				content: "";
 				display: inline-block;
-				width: 17px;
-				height: 17px;
+				width: 12px;
+				height: 12px;
 				background-image: url(@/assets/images/utils/icon_link_tab.svg);
 				background-size: contain;
 				}
@@ -1726,11 +1777,11 @@
 					color: $color-main-blue;
 					display: inline-block;
 					margin-left: 5px;
-					width: 17px;
-					height: 17px;
+					width: 14px;
+					height: 14px;
 					background-image: url(@/assets/images/utils/icon_link_tab.svg);
 					background-size: contain;
-					filter: invert(89%) sepia(83%) saturate(7500%) hue-rotate(238deg) brightness(104%) contrast(103%);
+					filter: $filter-white-to-blue;
 				}
 			}
 		}
@@ -1752,6 +1803,27 @@
 		text-decoration: underline;
 		text-align: center;
 		color: $color-main-blue;
+	}
+
+	&__external {
+		display: inline-flex;
+		align-items: center;
+
+		&::after {
+			content: "";
+			color: $color-main-blue;
+			display: inline-block;
+			margin-left: 3px;
+			width: 18px;
+			height: 18px;
+			background-image: url(@/assets/images/utils/icon_link_tab.svg);
+			background-size: contain;
+			filter: $filter-white-to-blue;
+		}
+	}
+
+	&__underline {
+		text-decoration: underline;
 	}
 }
 
