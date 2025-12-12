@@ -9,6 +9,8 @@
 	<%- include("src/include/head.ejs", {title, path, description}) %>
 </head>
 <body class="l-top">
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v24.0"></script>
 	<%- include("src/include/header.html") %>
 	<main class="l-main">
 	<section class="l-heading p-top__heading">
@@ -134,8 +136,6 @@
 	</section>
 	</main>
 	<%- include("src/include/footer.html") %>
-	<div id="fb-root"></div>
-	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v24.0"></script>
 	<script type="module" src="/src/main.js"></script>
 </body>
 </html>
