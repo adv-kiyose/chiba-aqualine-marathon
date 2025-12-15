@@ -6,7 +6,6 @@ import { initScrollTop } from './js/modules/scrollTop.js';
 import { initTogglePageTop } from './js/modules/togglePageTop.js';
 import { loadNews } from './js/modules/newsList.js';
 import { initCountdown } from './js/modules/countdown.js';
-import { initFacebook } from './js/modules/fb.js';
 import { initFadeInContainer } from './js/modules/fadeInContainer.js';
 import { initOpenModal } from './js/modules/openModal.js';
 import ScrollHint from 'scroll-hint';
@@ -59,12 +58,4 @@ document.addEventListener('DOMContentLoaded', () => {
 	initCountdown();
 	initOpenModal();
 	new ScrollHint('.js-scrollable');
-
-	if(window.FB) {
-		initFacebook();
-	} else {
-		window.fbAsyncInit = function() {
-			initFacebook();
-		}
-	}
 });
