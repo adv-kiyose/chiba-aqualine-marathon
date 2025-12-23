@@ -247,6 +247,7 @@ $modal-inner-width: 724px; // モーダル内コンテンツの最大幅
             max-height: 100%;
         }
 
+
         &--modal {
             max-width: $modal-inner-width;
             height: 130px;
@@ -257,6 +258,10 @@ $modal-inner-width: 724px; // モーダル内コンテンツの最大幅
 
             img {
                 max-width: 100%;
+
+                &.logo-jorf {
+                    width: 60%;
+                }
             }
         }
     }
