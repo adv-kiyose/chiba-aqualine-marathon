@@ -20,3 +20,9 @@
 		display: block !important;
 	}
 }
+
+.u-pc {
+	@include respond-to() {
+		display: none !important;
+	}
+}

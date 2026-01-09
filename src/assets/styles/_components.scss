@@ -1257,6 +1257,10 @@
 			img {
 				width: calc(100% - 20px);
 				margin: 0 auto;
+
+				&.logo-jorf {
+					width: 80%;
+				}
 			}
 		}
 	}

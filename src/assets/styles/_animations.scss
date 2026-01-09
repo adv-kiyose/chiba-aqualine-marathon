@@ -1,0 +1,10 @@
+/* アニメーション */
+/* MVかもめの上下移動 */
+@keyframes sway {
+	0% {
+	  transform: translateY(0);
+	}
+	100% {
+	  transform: translateY(-15px); /* 揺れ幅。お好みで調整 */
+	}
+  }

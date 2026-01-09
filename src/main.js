@@ -8,6 +8,7 @@ import { loadNews } from './js/modules/newsList.js';
 import { initCountdown } from './js/modules/countdown.js';
 import { initFadeInContainer } from './js/modules/fadeInContainer.js';
 import { initOpenModal } from './js/modules/openModal.js';
+import { initWaveAnimation } from './js/modules/waveAnimation.js';
 import ScrollHint from 'scroll-hint';
 import 'scroll-hint/css/scroll-hint.css';
 
@@ -57,5 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	loadNews();
 	initCountdown();
 	initOpenModal();
+	initWaveAnimation();
+
 	new ScrollHint('.js-scrollable');
 });
