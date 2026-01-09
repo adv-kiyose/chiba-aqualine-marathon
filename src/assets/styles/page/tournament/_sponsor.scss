@@ -250,6 +250,10 @@ $modal-inner-width: 724px; // モーダル内コンテンツの最大幅
             &.logo-jorf {
                 width: 80%;
             }
+
+            &.logo-nichiban {
+                width: 50%;
+            }
         }
 
 
@@ -266,6 +270,10 @@ $modal-inner-width: 724px; // モーダル内コンテンツの最大幅
 
                 &.logo-jorf {
                     width: 60%;
+                }
+
+                &.logo-nichiban {
+                    width: 50%;
                 }
             }
         }
