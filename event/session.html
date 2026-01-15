@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ja_JP">
+<head>
+		<%
+			const title = "ランニングセッション";
+			const path="event/session.html" 
+			const description="2026年11月8日開催！ちばアクアラインマラソン2026のイベントセッション紹介です。海ほたるの青く雄大な空と海に囲まれた景色の中や、千葉の田園を、市民ランナーが走ります。"
+		%>
+		<%- include("src/include/head.ejs", {title, path, description}) %>
+</head>
+<body class="l-guideline">
+	<%- include("src/include/header.html") %>
+	<main class="l-main">
+	<section class="l-heading p-top__heading">
+		<div class="c-heading__container--main">
+			<h2 class="c-heading__main">イベント・応援</h2>
+		</div>
+	</section>
+	<div class="l-breadclumb">
+		<ul>
+			<li><a href="/">トップ</a></li>
+			<li>イベント・応援</li>
+			<li>ランニングセッション</li>
+		</ul>
+	</div>
+	<section class="l-content">
+		<div class="l-content__inner">
+		<div class="l-column__main">
+			<section class="c-container">
+				<h3 class="c-heading__info p-session__heading--main">ランニングセッション</h3>
+				<div class="c-block__guideline">
+					<div class="c-block__guideline">
+						<p class="c-text__guideline">ちばアクアラインマラソン2026では6名のオフィシャルアンバサダーがランニングセッションを開催します。<br>
+						ぜひご参加ください。</p>
+					</div>
+					<div class="p-session__container">
+						<p class="p-session__image--profile">
+							<img src="/images/tournament/ambassador/img_m_takashi.jpg" alt="写真：M高史さん"><img src="/images/tournament/ambassador/img_sp_m_takashi.jpg" class="is-sp" alt="写真：M高史さん">
+						</p>
+						<div class="p-session__block--heading">
+							<!--<p class="p-session__text--end">募集は終了いたしました</p>-->
+							<h4 class="p-session__heading--event-name">Ｍ高史と下駄トレーニング＆ファルトレクで現状打破！</h4>
+						</div>
+						<dl class="p-session__block--info">
+							<dt>日時</dt>
+							<dd>2026/2/15(日)</dd>
+							<dt>場所</dt>
+							<dd>小見川B&G海洋センター</dd>
+							<dt>参加料</dt>
+							<dd>無料</dd>
+							<dt>申込期間</dt>
+							<dd>2026/1/8(木)12:00～ 2026/2/14(土)23:59</dd>
+						</dl>
+						<div class="p-session__block--copy">
+							<p class="p-session__copy">ちばアクアラインマラソンオフィシャルアンバサダーM高史さんによるランニングセッションイベントが開催されます。<br>
+								イベント詳細とお申し込みは<a href="">こちら！</a></p>
+						</div>
+						<div class="p-session__block--button">
+							<p class="c-button__standard"><a href="">イベント詳細とお申し込み</a></p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+			<%- include("src/include/subColumn.html") %>
+		</div>
+	</section>
+	</main>
+	<%- include("src/include/footer.html") %>	
+	<script type="module" src="/src/main.js"></script>
+</body>
+</html>
