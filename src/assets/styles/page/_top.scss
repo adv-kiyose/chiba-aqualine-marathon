@@ -159,6 +159,10 @@
 		left: calc((79 / 1920) * 100%);
 		display: none;
 
+		svg {
+			width: 100%;
+		}
+
 		@include respond-to {
 			top: calc((154 / 1066) * 100%);
 			left: calc((28 / 533) * 100%);
@@ -185,6 +189,69 @@
 
 			@include respond-to {
 				width: calc((284 / 533) * 100%);
+			}
+		}
+
+		// アニメーション設定
+		.cls-1, .cls-2 {
+			animation-name: sway-text;
+			animation-timing-function: ease-in-out;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			animation-duration: 1.6s;
+		}
+
+		@for $i from 1 through 20 {
+			&.p-top__copy--jp {
+				.upper {
+					.cls-1:nth-child(#{$i}) {
+						animation-delay: ($i - 1) * 0.2s;
+					}
+				}
+
+				.bottom {
+					.cls-1:nth-child(#{$i}) {
+						animation-delay: ($i - 1) * 0.1s + 0.1s;
+					}
+				}
+			}
+
+			&.p-top__copy--en {
+				.upper {
+					.cls-1:nth-child(#{$i}) {
+						animation-delay: ($i - 1) * 0.1s;
+					}
+				}
+				
+				.u-pc {
+					.bottom {
+						.cls-1:nth-child(#{$i}) {
+							animation-delay: ($i + 1) * 0.05s + 1.4s;
+						}
+					}
+				}
+
+				.u-sp {
+					.bottom {
+						.cls-1:nth-child(#{$i}) {
+							animation-delay: ($i + 1) * 0.05s + 0.9s;
+						}
+					}
+				}
+			}
+
+			&.p-top__copy--ch {
+				.upper {
+					.cls-1:nth-child(#{$i}) {
+						animation-delay: ($i - 1) * 0.2s;
+					}
+				}
+
+				.bottom {
+					.cls-2:nth-child(#{$i}) {
+						animation-delay: ($i - 1) * 0.1s + 0.5s;
+					}
+				}
 			}
 		}
 	}

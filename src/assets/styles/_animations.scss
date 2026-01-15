@@ -5,6 +5,15 @@
 	  transform: translateY(0);
 	}
 	100% {
-	  transform: translateY(-15px); /* 揺れ幅。お好みで調整 */
+	  transform: translateY(-15px);
 	}
   }
+
+@keyframes sway-text {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(10px);
+	}
+}
