@@ -59,6 +59,7 @@
 
 		&--sub {
 			font-size: 36px;
+			color: $color-white;
 			display: block;
 		}
 	}
@@ -74,6 +75,8 @@
 
 		&--sub {
 			display: block;
+			font-size: 16px;
+			font-weight: 500;
 		}
 	}
 
@@ -731,6 +734,30 @@
 			}
 		}
 	}
+
+	&__sponsor {
+		a {
+			padding: 4px 24px;
+			font-size: 16px;
+			color: $color-white;
+			border-color: $color-white;
+			background-color: $color-main-blue;
+			justify-content: center;
+
+			&::after {
+				filter: invert(100%);
+			}
+
+			&:hover {
+				color: $color-main-blue;
+				background-color: $color-white;
+
+				&::after {
+					filter: $filter-white-to-blue;
+				}
+			}
+		}
+	}
 }
 
 .c-navigation {
@@ -856,6 +883,12 @@
 	&.is-visible {
 		opacity: 1;
 		transform: translateY(0);
+	}
+
+	&__sub {
+		padding-top: 24px;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
 	}
 }
 
@@ -1932,6 +1965,37 @@
 			flex: 1 1 auto;
 		}
 	}
+
+	&__heading {
+		&--sponsor {
+			padding: 16px 24px;
+			background-color: $color-main-blue;
+			color: $color-white;
+			border-top-left-radius: 16px;
+			border-top-right-radius: 16px;	
+			position: relative;
+
+			&::before {
+				content: "";
+				background: url(/src/assets/images/utils/icon_sponsor.png) center no-repeat;
+				background-size: contain;
+				width: 62px;
+				height: 58px;
+				display: block;
+				position: absolute;
+				top: 21px;
+				right: 25px;
+
+				@include respond-to(1279px) {
+					content: none;
+				}
+
+				@include respond-to {
+					content: '';
+				}
+			}
+		}
+	}
 }
 
 .c-inner {
@@ -2004,7 +2068,7 @@
 		text-align: center;
 
 		img {
-			margin: 1rem auto;
+			margin: 0 auto 1rem;
 		}
 
 		&-link{
