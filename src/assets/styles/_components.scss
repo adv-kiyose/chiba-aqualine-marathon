@@ -886,9 +886,7 @@
 	}
 
 	&__sub {
-		padding-top: 24px;
-		border-top-left-radius: 0;
-		border-top-right-radius: 0;
+		padding-top: 0;
 	}
 }
 
@@ -1968,12 +1966,20 @@
 
 	&__heading {
 		&--sponsor {
+			width: calc(100% + 64px);
+			margin-left: -32px;
+			margin-bottom: 24px;
 			padding: 16px 24px;
 			background-color: $color-main-blue;
 			color: $color-white;
 			border-top-left-radius: 16px;
 			border-top-right-radius: 16px;	
 			position: relative;
+
+			@include respond-to {
+				width: calc(100% + 32px);
+				margin-left: -16px;
+				}
 
 			&::before {
 				content: "";
