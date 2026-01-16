@@ -1179,13 +1179,40 @@
 	&__wrapper {
 		&--slider {
 			position: relative;
+
+			&--sp {
+				display: none;
+
+				@include respond-to {
+					margin-top: 16px;
+					margin-bottom: 16px;
+					display: block;
+	
+					&::before {
+						content: "";
+						width: calc(100% - 32px);
+						margin-left: 16px;
+						display: block;
+						border-top: 1px dashed $color-main-blue;
+					}
+	
+					&::after {
+						content: "";
+						width: calc(100% - 32px);
+						margin-left: 16px;
+						display: block;
+						border-bottom: 1px dashed $color-main-blue;
+					}
+				}
+			}
+
 		}
 	}
 
 	&__block {
 		&--slider {
 			@include respond-to {
-				padding: 0 34px !important;
+				padding: 16px 34px !important;
 
 				&::before,
 				&::after {
@@ -1290,7 +1317,6 @@
 
 		&--sp {
 			padding-bottom: 16px;
-			border-bottom: 1px dashed $color-main-blue;
 			display: none !important;
 
 			@include respond-to() {
