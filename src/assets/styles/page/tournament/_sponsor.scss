@@ -21,13 +21,13 @@ $modal-inner-width: 724px; // モーダル内コンテンツの最大幅
     }
 
     &__list {
-        margin-bottom: 80px;
+        margin-bottom: 140px;
         display: flex;
         flex-wrap: wrap;
         gap: 16px;
 
         @include respond-to() {
-            margin-bottom: 30px;
+            margin-bottom: 80px;
             gap: 10px;
         }
 

@@ -247,6 +247,30 @@
 				display: none;
 			}
 		}
+
+		&--lower-sub {
+			margin-bottom: 16px;
+			font-size: 24px;
+			font-weight: bold;
+			color: $color-gnav-black;
+			display: flex;
+			gap: 16px;
+			align-items: center;
+
+			span {
+				font-size: 16px;
+			}
+
+			@include respond-to {
+				margin-bottom: 12px;
+				padding: 16px 16px 0;
+				font-size: 16px;
+
+				span {
+					font-size: 14px;
+				}
+			}
+		}
 	}
 
 	&__container {
@@ -860,6 +884,8 @@
 			overflow: hidden;
 			background: transparent;
 			box-sizing: content-box;
+			flex-direction: column;
+			gap: 0;
 
 			transition: max-height $fade-spd-default ease;
 		}
