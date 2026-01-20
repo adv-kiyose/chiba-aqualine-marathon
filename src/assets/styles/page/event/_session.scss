@@ -3,6 +3,7 @@
 
 .p-session {
 	&__container {
+		margin-bottom: 48px;
 		padding: 24px;
 		display: grid;
 		grid-template-columns: auto clamp(130px, 21.3%, 200px);
@@ -13,6 +14,10 @@
 		border: 1px solid $color-main-blue;
 		border-radius: 8px;
 		position: relative;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 
 		&::after {
 			content: "";
@@ -31,10 +36,10 @@
 				top: -22px;
 			}
 		}
-		
 
 		@include respond-to {
 			display: block;
+			margin-bottom: 40px;
 		}
 	}
 
