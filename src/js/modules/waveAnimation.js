@@ -1,5 +1,7 @@
 export function initWaveAnimation() {
 	const canvas = document.getElementById('waveCanvas');
+
+    if(!canvas) { return } // 対象がない画面ではスキップ
     const ctx = canvas.getContext('2d');
 
     let count = 0;   // アニメーション用カウンタ

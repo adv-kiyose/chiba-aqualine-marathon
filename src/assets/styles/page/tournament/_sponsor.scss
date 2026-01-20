@@ -13,10 +13,10 @@ $modal-inner-width: 724px; // モーダル内コンテンツの最大幅
     }
 
     &__container {
-        margin-bottom: 64px;
+        margin-bottom: 140px;
 
         @include respond-to() {
-            margin-bottom: 30px;
+            margin-bottom: 80px;
         }
     }
 
@@ -33,6 +33,35 @@ $modal-inner-width: 724px; // モーダル内コンテンツの最大幅
 
         &:last-child {
             margin-bottom: 0;
+        }
+
+        &--official {
+            margin-bottom: 70px;
+            padding-bottom: 70px;
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 100%;
+                display: block;
+                border-bottom: 1px dashed $color-main-blue;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+
+            @include respond-to {
+                margin-bottom: 40px;
+                padding-bottom: 40px;
+            }
+
+            &:last-child {
+                padding-bottom: 0;
+
+                &::after {
+                    content: none;
+                }
+            }
         }
 
         &--support {
