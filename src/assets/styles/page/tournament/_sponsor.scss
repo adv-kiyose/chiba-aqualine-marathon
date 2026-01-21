@@ -283,6 +283,10 @@ $modal-inner-width: 724px; // モーダル内コンテンツの最大幅
             &.logo-nichiban {
                 width: 50%;
             }
+
+            &.logo-olc {
+                width: 80%;
+            }
         }
 
 
@@ -303,6 +307,10 @@ $modal-inner-width: 724px; // モーダル内コンテンツの最大幅
 
                 &.logo-nichiban {
                     width: 50%;
+                }
+
+                &.logo-olc {
+                    width: 60%;
                 }
             }
         }
