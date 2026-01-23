@@ -561,15 +561,6 @@
 				flex-direction: row;
 				gap: 10px;
 				border: 1px solid $color-white;
-
-				&::after {
-					content: "";
-					width: 32px;
-					height: 32px;
-					display: inline-block;
-					background: url(@/assets/images/utils/icon_link_tab.svg) center no-repeat;
-					background-size: contain;
-				}
 			}
 
 			&:hover {
@@ -1060,7 +1051,7 @@
 		}
 
 		&--container {
-			flex: 1 0 auto;
+			flex: 1 1 auto;
 		}
 
 		&--text {
@@ -1085,6 +1076,7 @@
 					height: 17px;
 					background-image: url(@/assets/images/utils/icon_link_tab.svg);
 					background-size: contain;
+					background-repeat: no-repeat;
 					filter: invert(100%);
 				}
 			}

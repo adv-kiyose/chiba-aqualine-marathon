@@ -74,6 +74,11 @@
 				line-height: 1.6;
 			}
 
+			span {
+				margin-left: 1rem;
+				font-weight: bold;
+			}
+
 			@include respond-to {
 				display: block;
 				margin-bottom: 10px;
