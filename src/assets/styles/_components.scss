@@ -1404,6 +1404,13 @@
 				}
 			}
 		}
+
+		&--number {
+			li {
+				padding-left: 1.1em;
+				text-indent: -1.1em;
+			}
+		}
 	}
 
 	&__career {

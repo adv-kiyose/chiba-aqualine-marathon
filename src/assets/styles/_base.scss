@@ -2,6 +2,8 @@
 @use './mixins' as *;
 
 html {
+	scroll-behavior: smooth;
+
 	&.is-open {
 		position: fixed;
 		z-index: -1;

@@ -9,6 +9,7 @@ import { initCountdown } from './js/modules/countdown.js';
 import { initFadeInContainer } from './js/modules/fadeInContainer.js';
 import { initOpenModal } from './js/modules/openModal.js';
 import { initWaveAnimation } from './js/modules/waveAnimation.js';
+import { initSwitchTab } from './js/modules/switchTab.js';
 import ScrollHint from 'scroll-hint';
 import 'scroll-hint/css/scroll-hint.css';
 
@@ -59,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	initCountdown();
 	initOpenModal();
 	initWaveAnimation();
+	initSwitchTab();
 
 	new ScrollHint('.js-scrollable');
 });

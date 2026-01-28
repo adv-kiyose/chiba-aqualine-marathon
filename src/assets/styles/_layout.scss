@@ -350,10 +350,12 @@
 
 .l-column__main {
 	flex: 1 1 calc((1050 / 1440) * 100%);
+	min-width: 0;
 }
 
 .l-column__sub {
 	flex: 1 1 calc((318 / 1440) * 100%);
+	min-width: 0;
 
 	.c-container{
 		&:last-child{

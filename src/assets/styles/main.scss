@@ -3,7 +3,6 @@
 @use 'modules' as *;
 @use 'layout' as *;
 @use 'components' as *;
-@use 'utils' as *;
 @use 'animations' as *;
 
 @use 'page/top' as *;
@@ -11,3 +10,6 @@
 @use 'page/tournament/sponsor' as *;
 @use 'page/tournament/official' as *;
 @use 'page/event/session' as *;
+@use 'page/runner/entry' as *;
+
+@use 'utils' as *;

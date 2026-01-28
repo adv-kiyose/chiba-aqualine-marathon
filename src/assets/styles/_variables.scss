@@ -1,15 +1,22 @@
 // color
 $color-white: #ffffff;
-$color-tab-default-gray: #cecece;
+$color-black: #000000;
+$color-tab-default-gray: #cecece; 
 $color-disabled-gray: #9f9f9f;
+$color-disabled-button-gray: #dddddd;
+$color-disabled-text-gray: #b1b1b1;
+$color-border-gray: #b9b9b9;
 $color-main-blue: #0000ff;
 $color-bg-light-blue: #ebf4ff;
+$color-bg-table-gray: #00000008;
 $color-container-light-blue: #f6fbff;
 $color-green: #40B87C;
 $color-logo-blue: #0176c3;
 $color-red: #ff0000;
 $color-breadclumb-gray: #626262f2;
 $color-gnav-black: #000000F2;
+$color-yellow: #F5E149;
+
 
 $color-tag-info: #cc0000;
 $color-tag-runner: #0099e5;
@@ -18,6 +25,8 @@ $color-tag-event: #ea9800;
 $color-tag-traffic: #40b87c;
 
 $color-table-blue: #64c9f2;
+$color-table-light-blue: #64C9F280;
+
 
 $filter-white-to-blue: invert(89%) sepia(83%) saturate(7500%) hue-rotate(238deg) brightness(104%) contrast(103%);
 
