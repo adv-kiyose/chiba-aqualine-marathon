@@ -454,6 +454,7 @@
 
 		&--recruit {
 			margin-left: 24px;
+			margin-right: 24px;
 			margin-top: 16px;
 		}
 
@@ -548,6 +549,14 @@
 					font-size: 16px;
 				}
 			}
+
+			&.only-date {
+				margin-top: 0.75em;
+
+				@include respond-to {
+					margin-top: 0;
+				}
+			}
 		}
 
 		&--entry-schedule-time {
@@ -579,6 +588,7 @@
 		&--recruit-emp {
 			margin-top: 16px;
 			margin-left: 24px;
+			margin-right: 24px;
 			font-weight: bold;
 
 			span {
@@ -594,6 +604,7 @@
 		&--recruit {
 			margin-top: 16px;
 			margin-left: 24px;
+			margin-right: 24px;
 		}
 
 		&--guideline {
