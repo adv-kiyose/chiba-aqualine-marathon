@@ -68,6 +68,7 @@
 			font-weight: bold;
 			line-height: 1;
 			flex: 0 0 auto;
+			position: relative;
 
 			@include respond-to {
 				margin-bottom: 8px;
@@ -214,7 +215,7 @@
 					&:nth-child(2),
 					&:nth-child(3) {
 						width: calc((100% - 185px) / 2);
-						min-width: 300px;
+						min-width: 240px;
 					}
 				}
 			}
@@ -258,6 +259,10 @@
 			display: flex;
 			align-items: flex-start;
 			justify-content: space-between;
+
+			.price {
+				font-weight: 500;
+			}
 		}
 	}
 
@@ -376,12 +381,10 @@
 
 		&--division {
 			display: flex;
-			gap: 24px;
+			column-gap: 24px;
+			row-gap: 8px;
 			flex-wrap: wrap;
-
-			@include respond-to {
-				row-gap: 8px;
-			}
+			align-items: baseline;
 
 			dt {
 				padding: 6px 10px;
@@ -423,7 +426,11 @@
 			li {
 				display: flex;
 				gap: 8px;
-				align-items: center;
+				align-items: baseline;
+
+				@include respond-to {
+					font-size: 14px;
+				}
 
 				&::before {
 					content: "";
@@ -432,14 +439,16 @@
 					display: block;
 					background: url(@/assets/images/utils/icon_checkmark.svg) center no-repeat;
 					background-size: contain;
+					flex: 0 0 16px;
+					position: relative;
+					top: 2px;
 
 					@include respond-to {
 						width: 14px;
 						height: 14px;
+						flex-basis: 14px;
 					}
 				}
-
-				font-size: 14px;
 			}
 		}
 
@@ -489,7 +498,11 @@
 		}
 
 		&--guideline {
-			font-size: 14px;
+			font-size: 16px;
+
+			@include respond-to {
+				font-size: 14px;
+			}
 		}
 	}
 
@@ -571,6 +584,11 @@
 			span {
 				color: $color-tag-info;
 			}
+
+			a {
+				color: $color-main-blue;
+				text-decoration: underline;
+			}
 		}
 
 		&--recruit {
@@ -581,6 +599,10 @@
 		&--guideline {
 			@include respond-to {
 				margin-bottom: 16px;
+			}
+
+			a {
+				text-decoration: underline;
 			}
 		}
 	}
