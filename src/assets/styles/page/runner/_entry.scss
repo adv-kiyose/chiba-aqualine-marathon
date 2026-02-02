@@ -220,6 +220,7 @@
 			tbody {
 				td {
 					font-weight: bold;
+					vertical-align: middle;
 				}
 			}
 		}
@@ -794,6 +795,22 @@
 				padding-left: 1.25em;
 				text-indent: -1.25em;
 				font-size: 14px;
+			}
+		}
+	}
+}
+
+html[lang=en] {
+	.p-entry {
+		&__list {
+			&--division {
+				dt {
+					flex-basis: 110px;
+				}
+
+				dd {
+					flex-basis: calc(100% - 134px);
+				}
 			}
 		}
 	}
