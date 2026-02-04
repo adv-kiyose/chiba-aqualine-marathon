@@ -1028,6 +1028,15 @@
 		overflow-x: hidden;
 		overflow-y: auto;
 
+		&--list {
+			max-height: 500px;
+			overflow-y: auto;
+
+			@include respond-to {
+				max-height: 300px;
+			}
+		}
+
 		&--item {
 			padding: 16px;
 			display: flex;
