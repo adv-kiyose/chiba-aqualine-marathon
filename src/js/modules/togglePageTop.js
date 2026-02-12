@@ -2,6 +2,7 @@
 export function initTogglePageTop() {
 	document.addEventListener('DOMContentLoaded', () => {
 		const pageTopButton = document.querySelector('.js-pagetop'); // PAGE TOPボタン
+		const entryButton = document.querySelector('.js-entry'); // エントリーボタン
 		const mainVisual = document.querySelector('.p-top__mainvisual'); // キービジュアル
 
 
@@ -20,8 +21,10 @@ export function initTogglePageTop() {
 				entries.forEach((entry) => {
 					if(entry.isIntersecting) {
 						pageTopButton.classList.add('is-hidden');
+						entryButton.classList.add('is-hidden');
 					} else {
 						pageTopButton.classList.remove('is-hidden');
+						entryButton.classList.remove('is-hidden');
 					}
 				});
 			}, observerOptions);
