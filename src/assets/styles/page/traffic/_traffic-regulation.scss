@@ -1,0 +1,103 @@
+@use '../../variables' as *;
+@use '../../mixins' as *;
+
+.p-traffic {
+	&__block {
+		&--guideline {
+			margin-bottom: 32px;
+
+			&:last-child {
+				margin-bottom: 16px;
+			}
+		}
+
+		&--main-caution {
+			margin: 16px 0 32px;
+			padding: 36px 16px;
+			background-color: $color-main-blue;
+			border-radius: 16px;
+
+			@include respond-to {
+				margin-bottom: 16px;
+				padding: 18px 12px;
+			}
+		}
+
+		&--coop-caution {
+			margin-top: 32px;
+			padding: 36px;
+			border-radius: 16px;
+			background-color: $color-yellow;
+
+			@include respond-to {
+				padding: 18px;
+			}
+		}
+	}
+
+	&__heading {
+		&--info {
+			margin-bottom: 32px;
+		}
+
+		&--coop {
+			margin-bottom: 24px;
+			font-size: 24px;
+			font-weight: bold;
+			line-height: 1.5;
+			color: $color-caution-gray;
+			display: flex;
+			justify-content: center;
+
+			@include respond-to {
+				font-size: 20px;
+			}
+		}
+	}
+
+	&__text {
+		&--main-caution {
+			font-size: 24px;
+			line-height: 1.5;
+			font-weight: bold;
+			color: $color-white;
+			display: flex;
+			justify-content: center;
+
+			@include respond-to {
+				font-size: 18px;
+			}
+		}
+
+		&--guideline-emp {
+			margin-bottom: 16px;
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 1;
+
+			@include respond-to {
+				margin-bottom: 8px;
+			}
+		}
+	}
+
+	&__list {
+		&--coop {
+			li {
+				font-size: 16px;
+				line-height: 1.6;
+				font-weight: bold;
+				color: $color-caution-gray;
+
+				@include respond-to {
+					font-size: 14px;
+					margin-bottom: 5px;
+				}
+	
+				span {
+					color: $color-tag-info;
+				}
+			}
+		}
+	}
+}

@@ -120,6 +120,15 @@
 			margin-bottom: 8px;
 		}
 
+		&--thin {
+			margin-bottom: 32px;
+			font-weight: 500;
+
+			@include respond-to {
+				margin-bottom: 16px;
+			}
+		}
+
 		&--sub {
 			margin-bottom: 12px;
 			font-size: 16px;
@@ -496,13 +505,47 @@
 		}
 	}
 
-	&__download {
+	&__download,
+	&__detail {
 		display: flex;
 		justify-content: center;
 
 		a {
 			padding-left: 30px;
 			padding-right: 30px;
+		}
+	}
+
+	&--pdf {
+		margin-top: 24px;
+
+		a {
+			background-color: transparent;
+
+			&::after {
+				width: 11px;
+				height: 14px;
+				background-image: url(/src/assets/images/utils/icon_pdf.svg);
+				transition: filter $fade-spd-default ease;
+			}
+
+			&:hover::after {
+				background-image: url(/src/assets/images/utils/icon_pdf.svg);
+				filter: invert(100%);
+			}
+		}
+	}
+
+	&__down-tri {
+		a {
+			background-color: transparent;
+
+			&::after {
+				position: relative;
+				top: 2px;
+				transform-origin: center;
+				transform: rotate(90deg);
+			}
 		}
 	}
 
