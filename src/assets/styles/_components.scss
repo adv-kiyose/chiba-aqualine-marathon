@@ -1499,6 +1499,14 @@
 			row-gap: 16px;
 			column-gap: 24px;
 
+			&.column-3 {
+				height: 118px;
+
+				@include respond-to(1060px) {
+					height: 100%;
+				}
+			}
+
 			@include respond-to() {
 				margin: 16px;
 			}

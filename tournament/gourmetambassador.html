@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja_JP">
+<head>
+		<%
+			const title = "公認グルメ系アンバサダー";
+			const path="tournament/ambassador.html" 
+			const description="2026年11月8日開催！ちばアクアラインマラソン2026の公認グルメ系アンバサダーに関する情報です。海ほたるの青く雄大な空と海に囲まれた景色の中や、千葉の田園を、市民ランナーが走ります。"
+		%>
+		<%- include("src/include/head.ejs", {title, path, description}) %>
+</head>
+<body class="l-guideline">
+	<%- include("src/include/header.html") %>
+	<main class="l-main">
+	<section class="l-heading p-top__heading">
+		<div class="c-heading__container--main">
+			<h2 class="c-heading__main">イベント・応援</h2>
+		</div>
+	</section>
+	<div class="l-breadclumb">
+		<ul>
+			<li><a href="/">トップ</a></li>
+			<li>イベント・応援</li>
+			<li>公認グルメ系アンバサダー</li>
+		</ul>
+	</div>
+
+	<section class="l-content">
+		<div class="l-content__inner">
+		<div class="l-column__main">
+			<section class="c-container">
+				<div class="c-block__ambassador">
+					<h3 class="c-heading__info">公認グルメ系アンバサダー</h3>
+					<p class="c-text__guideline--caption">千葉の魅力を「食」の視点で発信していく「公認グルメ系アンバサダー」が登場！<br>
+					知られざる千葉のグルメを独自の視点で紹介するとともに、ランナーとして完走を目指し、大会当日の給水・給食やイベント会場のグルメ情報も発信していきます。<br>
+					食べて、走って、また食べて、千葉の魅力をお伝えします！</p>
+					<div class="c-block__guideline">
+						<div class="c-wrap__ambassador">
+							<p class="c-image__ambassador"><img src="/images/tournament/gourmetambassador/img_ma-min.jpg" alt="写真：まーみんさん"><img src="/images/tournament/gourmetambassador/img_sp_ma-min.jpg" class="is-sp" alt="写真：まーみんさん"></p>
+							<div class="c-block__member">
+								<div class="c-wrap__name--ambassador">
+									<div class="c-block__name--ambassador">
+										<!-- <p class="c-heading__position--ambassador"></p> -->
+										<h5 class="c-heading__name--ambassador">まーみん</h5>
+									</div>
+									<ul class="c-list__sns--ambassador">
+										<li><a href="https://www.instagram.com/mamimu0102/" target="_blank"><img src="/images/common/icon_instagram.svg" alt=""></a></li>
+										<li><a href="https://x.com/maaminraamen/" target="_blank"><img src="/images/common/icon_x.png" alt=""></a></li>
+										<li class="yt"><a href="https://www.youtube.com/@ma-minmentv/" target="_blank"><img src="/images/common/icon_youtube.png" alt=""></a></li>
+									</ul>
+								</div>
+								<p class="c-text__profile">千葉県を拠点に活動するラーメンYouTuber。<br>「うまーみん！」を合言葉に、年間400杯食べ歩きながらYouTubeやSNSでラーメン情報を毎日発信中。SNS総フォロワー9万人。</p>
+								<p class="c-text__profile">現役歯科衛生士でありながら医療秘書の資格も取得しており、医療従事者の観点から健康にラーメンを食べ続けるために、食事や健康にも気を使っている。<br>ずっと美味しくラーメンを食べ続けるための健康法として、「うまーみんランニング」と名付けたランニングを日々行っており、ファンの間でも「うまーみんランニング」が流行中。</p>
+								<div class="c-block__message">
+									<h4 class="c-heading__message"><img src="/images/tournament/heading_message.webp" alt="大会へのメッセージ"></h4>
+									<div class="c-inner__message">
+										<p class="c-text__message">こんにちは！まーみんです。<br>アンバサダーとしてこのような素晴らしい大会に参加させていただけること、とても光栄です。<br>千葉生まれ千葉育ちの私にとってアクアラインは身近な存在で、幾度となく車で走ったことはありますが、自分の脚で走れることがとても楽しみです。
+										</p>
+										<p class="c-text__message">わたしは毎日ラーメンを食べ続けるためにランニングを始めました。<br>元々走ることが苦手だった私ですが、練習を重ねるうちに楽しさや爽快感を感じられるようになりました。<br>走った後に食べるラーメンは一段と「うまーみん！」</p>
+										<p class="c-text__message">私のように食べることが大好きな人にもぜひ、この大会に挑戦してほしいです。</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<%- include("src/include/subColumn.html") %>
+		</div>
+	</section>
+	</main>
+	<%- include("src/include/footer.html") %>	
+	<script type="module" src="/src/main.js"></script>
+</body>
+</html>
