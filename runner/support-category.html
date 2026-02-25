@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ja_JP">
+<head>
+		<%
+			const title = "学生応援・女性応援枠について";
+			const path="tournament/sponsorship.html" 
+			const description="2026年11月8日開催！ちばアクアラインマラソン2026の学生応援・女性応援枠についてです。海ほたるの青く雄大な空と海に囲まれた景色の中や、千葉の田園を、市民ランナーが走ります。"
+		%>
+		<%- include("src/include/head.ejs", {title, path, description}) %>
+</head>
+<body class="l-guideline">
+	<%- include("src/include/header.html") %>
+	<main class="l-main">
+	<section class="l-heading p-top__heading">
+		<div class="c-heading__container--main">
+			<h2 class="c-heading__main">ランナー</h2>
+		</div>
+	</section>
+	<div class="l-breadclumb">
+		<ul>
+			<li><a href="/">トップ</a></li>
+			<li>ランナー</li>
+			<li>学生応援・女性応援枠について</li>
+		</ul>
+	</div>
+
+	<section class="l-content">
+		<div class="l-content__inner">
+		<div class="l-column__main">
+			<section class="c-container">
+				<h3 class="c-heading__info p-support__heading--info">学生の「挑戦」を 女性の「走る」を応援する！ <br>
+					学生応援・女性応援のお知らせ</h3>
+				<div class="p-support__container">
+					<h4 class="p-support__heading">学生応援企画</h4>
+					<p class="p-support__text--tagline">学生ランナーの「挑戦」を応援します！</p>
+					<p class="p-support__text--explain">参加料の負担軽減や参加意欲を高める施策を講じ、将来の大会を担う若年者のマラソン参加を後押しするため、「学生応援企画」を実施します。</p>
+					<p class="p-support__icon--heading"><img src="/images/runner/support-category/icon_student.svg" alt=""></p>
+					<div class="p-support__block--what student">
+						<h5 class="p-support__heading--what js-toggle-accordion" data-target="student">どんな応援があるの？</h5>
+						<div class="p-support__block--toggle js-toggle-target" data-name="student">
+							<div class="p-support__inner--toggle">
+								<div class="p-support__inner--on-inner">
+									<h6 class="c-heading__guideline p-support__heading--guideline">学生応援枠の新設</h6>
+									<p class="c-text__guideline p-support__text--guideline">将来の大会を担う若年者の参加者数を増すため、「学生」を対象とした「学生応援枠」を新設いたしました。</p>
+									<p class="c-text__guideline p-support__text--guideline">本企画には、大会オフィシャルスポンサーである「株式会社ZOZO」様にご賛同いただいており、<span>日々の暮らしを走り続ける学生をサポートしたいという想いから、「自分らしいスタイル」でマラソンに挑戦できるよう</span>「ZOZOUSED」で利用可能なクーポン<sup>※</sup>をご用意いただきました。</p>
+									<p class="c-text__guideline p-support__text--guideline">初心者の方も、久しぶりに挑戦する方も。自分らしいスタイルの挑戦を、私たちは全力で応援します。</p>
+									<h6 class="c-heading__guideline p-support__heading--guideline">ZOZOUSEDクーポンをプレゼント！</h6>
+									<p class="c-text__guideline p-support__text--guideline">「学生応援枠」での参加特典としてフルマラソン〇〇円、ハーフマラソン〇〇円の、ZOZOUSEDで使えるクーポンがつきます。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="p-support__container">
+					<h4 class="p-support__heading">女性応援企画</h4>
+					<p class="p-support__text--tagline">女性ランナーの「走る」を応援します！</p>
+					<p class="p-support__text--explain">「もっと多くの女性に、走る楽しさを感じてほしい」 そんな願いを込めて、今大会では「女性応援企画」を実施します。</p>
+					<p class="p-support__icon--heading"><img src="/images/runner/support-category/icon_women.svg" alt=""></p>
+					<div class="p-support__block--what women">
+						<h5 class="p-support__heading--what js-toggle-accordion" data-target="women">どんな応援があるの？</h5>
+						<div class="p-support__block--toggle js-toggle-target" data-name="women">
+							<div class="p-support__inner--toggle">
+								<div class="p-support__inner--on-inner">
+									<h6 class="c-heading__guideline p-support__heading--guideline">女性応援枠の新設</h6>
+									<p class="c-text__guideline p-support__text--guideline">今大会では、多様なランナーがそれぞれの目標に向かって挑戦できる環境づくりを目指し、「女性応援枠」を新設いたしました。</p>
+									<p class="c-text__guideline p-support__text--guideline">本企画には、大会オフィシャルスポンサーである「株式会社ZOZO」様にご賛同いただいており、<span>「走った後のセルフケアも楽しんでほしい」という想いから、女性応援枠でご参加の皆様へ、</span>「ZOZOCOSME」で利用可能なクーポンや、肌をいたわるフェイスパックなど、心身ともにリフレッシュしていただけるアイテムをご用意いただきました。</p>
+									<p class="c-text__guideline p-support__text--guideline">初心者の方も、久しぶりに挑戦する方も。自分自身のペースで、心地よく。皆様の挑戦を、私たちは全力で応援します。</p>
+	
+									<ul class="p-support__list--women">
+										<li>
+											<p class="p-support__icon--women"><img src="/images/runner/support-category/icon_changing_room.svg" alt=""></p>
+											<h6 class="p-support__heading--women">女性専用更衣室の拡充</h6>
+											<div class="p-support__block--text-women">
+												<p class="p-support__text--women">「多くの女性に参加してほしい」という想いから、従来より広い更衣室を用意します。</p>
+											</div>
+										</li>
+										<li>
+											<p class="p-support__icon--women"><img src="/images/runner/support-category/icon_wc.svg" alt=""></p>
+											<h6 class="p-support__heading--women">女性専用トイレの設置</h6>
+											<div class="p-support__block--text-women">
+												<p class="p-support__text--women">「多くの女性に参加してほしい」という想いから、女性専用のトイレを十分な数用意します。</p>
+											</div>
+										</li>
+										<li>
+											<p class="p-support__icon--women"><img src="/images/runner/support-category/icon_care.svg" alt=""></p>
+											<h6 class="p-support__heading--women">女性専用ケア施設の設置</h6>
+											<div class="p-support__block--text-women">
+												<p class="p-support__text--women">マラソン後の身体を適切にケアするためのケア施設を設置します。<br>
+													また、施設スタッフは全員女性で構成します。</p>
+												<p class="p-support__caution--women">※一度に利用できる定員の上限がございます。</p>
+											</div>
+										</li>
+										<li>
+											<p class="p-support__icon--women"><img src="/images/runner/support-category/icon_shower.svg" alt=""></p>
+											<h6 class="p-support__heading--women">シャワーブースの設置</h6>
+											<div class="p-support__block--text-women">
+												<p class="p-support__text--women">マラソン後に使用できるシャワーブース「WOTA」を設置します。</p>
+												<p class="p-support__caution--women">※数に限りがございます</p>
+											</div>
+										</li>
+										<li>
+											<p class="p-support__icon--women"><img src="/images/runner/support-category/icon_cosme.svg" alt=""></p>
+											<h6 class="p-support__heading--women">ZOZOCOSMEクーポンをプレゼント！</h6>
+											<div class="p-support__block--text-women">
+												<p class="p-support__text--women">「女性応援枠」での参加特典としてフルマラソン○○円、ハーフマラソン○○円分のZOZOCOSMEで使えるクーポンがつきます。</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="c-container">
+				<hgroup class="p-support__heading--entry">
+					<p class="p-support__heading--entry-top">「学生応援枠」・「女性応援枠」は、</p>
+					<p class="p-support__heading--entry-copy">2026年3月22日(日) 午後8時～</p>
+					<p class="p-support__heading--entry-copy row-2">スポーツエントリーにて<span>先着順</span>で募集開始！</p>
+				</hgroup>
+				<p class="p-support__button--entry"><a href="https://www.sportsentry.ne.jp/register" target="_blank">参加申し込みはこちら</a></p>
+				<p class="p-support__caution--entry">※他の参加枠の詳細については<a href="/runner/entry.html">こちら</a>をご確認ください。</p>
+			</section>
+		</div>
+			<%- include("src/include/subColumn.html") %>
+		</div>
+	</section>
+	</main>
+	<%- include("src/include/footer.html") %>	
+	<script type="module" src="/src/main.js"></script>
+</body>
+</html>
