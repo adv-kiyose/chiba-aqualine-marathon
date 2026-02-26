@@ -626,6 +626,12 @@
 
 	&__button {
 		&--entry {
+			margin-bottom: 32px;
+
+			@include respond-to {
+				margin-bottom: 24px;
+			}
+			
 			a {
 				padding: 24px;
 				font-size: 32px;
