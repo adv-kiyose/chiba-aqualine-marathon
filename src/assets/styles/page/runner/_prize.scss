@@ -1,0 +1,128 @@
+@use '../../variables' as *;
+@use '../../mixins' as *;
+
+.p-prize {
+	&__wrap {
+		&--tabs {
+			padding: 16px;
+			border: 1px solid $color-main-blue;
+			overflow-x: auto;
+		}
+
+		
+		&--table-guide {
+			width: 100%;
+			overflow-x: auto;
+
+			table {
+				min-width: 100%;
+				border: 1px solid $color-border-gray;
+				border-collapse: collapse;
+			}
+
+			th, td {
+				border: 1px solid $color-border-gray;
+				vertical-align: top;
+				text-align: center;
+			}
+
+			thead {
+				th {
+					min-width: 140px;
+					padding: 10px 12px;
+					font-size: 16px;
+					font-weight: bold;
+					background-color: $color-table-light-blue;
+
+					&:first-child {
+						min-width: 150px;
+						background-color: $color-bg-table-gray;
+						text-align: left;
+					}
+				}
+			}
+
+			tbody {
+				th, td {
+					padding: 10px 12px;
+				}
+
+				th {
+					width: 185px;
+					background-color: $color-bg-table-gray;
+					font-weight: normal;
+					text-align: left;
+				}
+
+				td {
+					background-color: $color-white;
+				}
+			}
+
+			.no-break {
+				white-space: nowrap;
+			}
+
+			.align-center {
+				text-align: center;
+			}
+
+			.valign-center {
+				vertical-align: middle;
+			}
+		}
+	}
+
+	&__block {
+		&--tab {
+			display: none;
+
+			&.is-current {
+				display: block;
+			}
+		}
+	}
+
+	&__list {
+		&--tabs {
+			display: flex;
+			overflow-x: auto;
+			flex-wrap: nowrap;
+			gap: 3px;
+	
+			li {
+				padding: 6px 24px;
+				cursor: pointer;
+				border-top: 1px solid $color-main-blue;
+				border-left: 1px solid $color-main-blue;
+				border-right: 1px solid $color-main-blue;
+				border-top-left-radius: 8px;
+				border-top-right-radius: 8px;
+				font-weight: bold;
+				user-select: none;
+				white-space: nowrap;
+				text-align: center;
+				flex: 1 1 50%;
+				
+				@include respond-to {
+					font-size: 14px;
+				}
+	
+				&.is-current {
+					color: $color-white;
+					background-color: $color-main-blue;
+				}
+			}
+		}
+	}
+
+	&__image {
+		&--kv {
+			margin-bottom: 32px;
+
+			@include respond-to {
+				margin-bottom: 16px;
+			}
+		}
+	}
+}
