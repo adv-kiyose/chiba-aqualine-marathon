@@ -10,6 +10,7 @@ import { initFadeInContainer } from './js/modules/fadeInContainer.js';
 import { initOpenModal } from './js/modules/openModal.js';
 import { initWaveAnimation } from './js/modules/waveAnimation.js';
 import { initSwitchTab } from './js/modules/switchTab.js';
+import { initAccordion } from './js/modules/toggleAccordion.js';
 import ScrollHint from 'scroll-hint';
 import 'scroll-hint/css/scroll-hint.css';
 
@@ -61,6 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	initOpenModal();
 	initWaveAnimation();
 	initSwitchTab();
+	initAccordion();
 
 	new ScrollHint('.js-scrollable');
 });
