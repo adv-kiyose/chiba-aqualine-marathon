@@ -69,6 +69,12 @@
 		}
 
 		&--guideline {
+			margin-top: 24px;
+
+			&:first-child {
+				margin-top: 0;
+			}
+
 			@include respond-to {
 				margin-bottom: 10px;
 				font-size: 18px;
@@ -295,6 +301,12 @@
 
 	&__list {
 		&--women {
+			margin-top: 48px;
+
+			@include respond-to {
+				margin-top: 24px;
+			}
+
 			li {
 				margin-bottom: 24px;
 				padding-bottom: 24px;
