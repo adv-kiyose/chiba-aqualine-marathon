@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ja_JP">
+<head>
+		<%
+			const title = "Tシャツデザイン決定！";
+			const path="tournament/sponsorship.html" 
+			const description="2026年11月8日開催！ちばアクアラインマラソン2026のTシャツデザインが決定！。海ほたるの青く雄大な空と海に囲まれた景色の中や、千葉の田園を、市民ランナーが走ります。"
+		%>
+		<%- include("src/include/head.ejs", {title, path, description}) %>
+</head>
+<body class="l-guideline">
+	<%- include("src/include/header.html") %>
+	<main class="l-main">
+		<section class="l-heading p-top__heading">
+			<div class="c-heading__container--main">
+				<h2 class="c-heading__main">ランナー</h2>
+			</div>
+		</section>
+		<div class="l-breadclumb">
+			<ul>
+				<li><a href="/">トップ</a></li>
+				<li>ランナー</li>
+				<li>Tシャツデザイン決定！</li>
+			</ul>
+		</div>
+
+		<section class="l-content">
+			<div class="l-content__inner">
+				<div class="l-column__main">
+					<section class="c-container">
+						<div class="c-block__guideline" id="general">
+							<h4 class="c-heading__guideline">全般について</h4>
+							<div class="p-support__block--what student">
+								<h5 class="p-support__heading--what js-toggle-accordion" data-target="student">どんな応援があるの？</h5>
+								<div class="p-support__block--toggle js-toggle-target" data-name="student">
+									<div class="p-support__inner--toggle">
+										<div class="p-support__inner--on-inner">
+											<h6 class="c-heading__guideline p-support__heading--guideline">学生応援枠の新設</h6>
+											<p class="c-text__guideline p-support__text--guideline">将来の大会を担う若年者の参加者数を増すため、「学生」を対象とした「学生応援枠」を新設いたしました。</p>
+											<p class="c-text__guideline p-support__text--guideline">本企画には、大会オフィシャルスポンサーである「株式会社ZOZO」様にご賛同いただいており、<span>日々の暮らしを走り続ける学生をサポートしたいという想いから、「自分らしいスタイル」でマラソンに挑戦できるよう</span>「ZOZOUSED」で利用可能なクーポン<sup>※</sup>をご用意いただきました。</p>
+											<p class="c-text__guideline p-support__text--guideline">初心者の方も、久しぶりに挑戦する方も。自分らしいスタイルの挑戦を、私たちは全力で応援します。</p>
+											<h6 class="c-heading__guideline p-support__heading--guideline">ZOZOUSEDクーポンをプレゼント！</h6>
+											<p class="c-text__guideline p-support__text--guideline">「学生応援枠」での参加特典としてフルマラソン〇〇円、ハーフマラソン〇〇円の、ZOZOUSEDで使えるクーポンがつきます。</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</section>
+	</main>
+	<%- include("src/include/footer.html") %>	
+	<script type="module" src="/src/main.js"></script>
+</body>
+</html>
