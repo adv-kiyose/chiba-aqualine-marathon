@@ -816,6 +816,12 @@
 			}
 		}
 	}
+
+	&__transparent {
+		a, button {
+			background-color: transparent;
+		}
+	}
 }
 
 .c-navigation {
