@@ -2,7 +2,7 @@
 import Swiper from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 
 const registeredSelectors = new Set();
 const sliders = new Map();
@@ -72,7 +72,7 @@ function evaluateSelector({ selector, options, breakpoint }) {
 
       // Swiper に渡す最終オプション
 	const finalOptions = {
-        modules: [Navigation],
+        modules: [Navigation, Autoplay],
         slidesPerView: 'auto',
         spaceBetween: 16,
         navigation: { prevEl: prevBtn, nextEl: nextBtn },
