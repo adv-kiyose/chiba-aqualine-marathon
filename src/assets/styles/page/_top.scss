@@ -285,6 +285,37 @@
 			}
 		}
 	}
+
+	&__block {
+		&--kv-banner {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: flex;
+			opacity: 0;
+			visibility: hidden;
+			animation-name: fade-repeat;
+			animation-duration: 11s;
+			animation-fill-mode: forwards;
+			animation-iteration-count: infinite;
+
+			@include respond-to {
+				display: none;
+			}
+		}
+	}
+
+	&__slider {
+		&--sp-kv {
+			display: none !important;
+
+			@include respond-to {
+				display: block !important;
+			}
+		}
+	}
 }
 
 html[lang=ja_JP],

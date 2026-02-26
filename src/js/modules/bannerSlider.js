@@ -50,6 +50,7 @@ function evaluateSelector({ selector, options, breakpoint }) {
     // **決定**：loopを有効にするかどうか（ユーザー指定の options をベースに上書き）
     const wantLoop = !!options.loop;
     const loopEnabled = wantLoop && overflow; // overflowしているときだけ loop を有効化
+    const wantAutoplay = !!options.autoplay;
 
     // 初期化する場合
     if (window.innerWidth <= breakpoint && !existing) {

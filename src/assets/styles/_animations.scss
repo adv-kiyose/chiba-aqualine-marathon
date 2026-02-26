@@ -17,3 +17,30 @@
 		transform: translateY(10px);
 	}
 }
+
+@keyframes fade-repeat {
+	0% {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	41.7% {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	50% {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	91.7% {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	100% {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
