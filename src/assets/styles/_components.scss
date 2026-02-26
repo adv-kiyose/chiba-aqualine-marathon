@@ -98,12 +98,13 @@
 	}
 
 	&__info {
-		margin-bottom: 56px;
+		margin-bottom: 40px;
 		font-size: 32px;
 		font-weight: bold;
 		line-height: 1;
 
 		@include respond-to() {
+			margin-bottom: 28px;
 			font-size: 24px;
 			line-height: 1.4;
 		}
@@ -1460,6 +1461,12 @@
 				&::before {
 					content: "・ ";
 				}
+
+				&.kome {
+					&::before {
+						content: '※ ';
+					}
+				}
 			}
 		}
 
@@ -1624,15 +1631,10 @@
 		}
 
 		&--caption {
-			margin-top: -16px;
 			margin-bottom: 24px;
 
 			a {
 				color: $color-main-blue;
-			}
-
-			@include respond-to() {
-				margin-top: -46px;
 			}
 		}
 

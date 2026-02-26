@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ja_JP">
+<head>
+		<%
+			const title = "ウェーブスタートの導入について";
+			const path="tournament/wavestart.html" 
+			const description="2026年11月8日開催！ちばアクアラインマラソン2026のウェーブスタートの導入について。海ほたるの青く雄大な空と海に囲まれた景色の中や、千葉の田園を、市民ランナーが走ります。"
+		%>
+		<%- include("src/include/head.ejs", {title, path, description}) %>
+</head>
+<body class="l-guideline">
+	<%- include("src/include/header.html") %>
+	<main class="l-main">
+	<section class="l-heading p-top__heading">
+		<div class="c-heading__container--main">
+			<h2 class="c-heading__main">大会情報</h2>
+		</div>
+	</section>
+	<div class="l-breadclumb">
+		<ul>
+			<li><a href="/">トップ</a></li>
+			<li>大会情報</li>
+			<li>ウェーブスタートの導入について</li>
+		</ul>
+	</div>
+	<section class="l-content">
+		<div class="l-content__inner">
+		<div class="l-column__main">
+			<section class="c-container">
+				<h3 class="c-heading__info">ウェーブスタートの導入について</h3>
+				<div class="c-block__guideline">
+					<h4 class="c-heading__guideline"> ウェーブスタートとは？</h4>
+					<div class="c-block__guideline">
+						<p class="c-text__guideline">前回大会から参加者の安全のため、これまでも、多数の参加ランナーからご要望を頂いておりましたウェーブスタート（時差スタート）を導入することとなりました。ウェーブスタートとは、全ランナーが同時に走り出す一斉スタートとは異なり、複数の組に分けて時間差でスタートする方法です。速いランナーから短い時間差で順次スタートさせる様子が波のように見えるため、このように命名されました。海外ではボストンマラソンやニューヨークシティマラソン、国内でもつくばマラソンや神戸マラソンなどの大規模マラソン大会でも導入されています。<br>
+						ウェーブスタートは、スタート時の混雑を避けたり、コース走行中の混雑を緩和したりすることで、安全で快適な運営に役立ちます。</p>
+					</div>
+				</div>
+				<div class="c-block__guideline">
+					<h4 class="c-heading__guideline">今大会のウェーブスタート</h4>
+					<div class="c-block__guideline">
+						<p class="c-text__guideline">エントリー時に申告いただいた「完走予想タイム」を基に3つのウェーブに割り振ります。各ウェーブのスタート時間は下記のとおりで、5分毎の時差スタートとなります。</p>
+						<ul class="c-list__guideline--dot">
+							<li>第１ウェーブ　9時45分（10時25分）</li>
+							<li>第２ウェーブ　9時50分（10時30分）</li>
+							<li>第３ウェーブ　9時55分（10時35分）</li>
+							<li class="kome">（　　　）内は短縮マラソン実施時</li>
+						</ul>
+						<p class="c-text__guideline">ウェーブスタート導入以前の大会では、最後尾のランナーがスタートラインを通過する時間が、スタート関門時間に迫ることもありましたが、ウェーブを分けることでスタート時の混雑が緩和され、円滑なスタートが促されることにより、最後尾のランナーのスタートライン通過時間も早くなることが期待されます。</p>
+					</div>
+				</div>
+				<div class="c-block__guideline">
+					<h4 class="c-heading__guideline">記録計測について</h4>
+					<div class="c-block__guideline">
+						<p class="c-text__guideline">ウェーブスタートでは、公式記録（グロスタイム）はウェーブごとの号砲を基準に計測し、順位については、総合はグロスタイム、年代別はフィニッシュタイムを採用します。また、指定されたウェーブは守るようにお願いします。指定されたウェーブより前のウェーブでスタートした場合は失格となります。なお、指定のウェーブより後ろのウェーブで走ることは認めますが、グロスタイムの修正は行いません。</p>
+					</div>
+				</div>
+			</section>
+		</div>
+			<%- include("src/include/subColumn.html") %>
+		</div>
+	</section>
+	</main>
+	<%- include("src/include/footer.html") %>	
+	<script type="module" src="/src/main.js"></script>
+</body>
+</html>
