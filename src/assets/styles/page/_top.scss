@@ -301,6 +301,8 @@
 			animation-fill-mode: forwards;
 			animation-iteration-count: infinite;
 
+			background-color: $color-bg-light-blue;
+
 			@include respond-to {
 				display: none;
 			}

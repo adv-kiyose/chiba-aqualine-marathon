@@ -13,7 +13,6 @@ import { initSwitchTab } from './js/modules/switchTab.js';
 import { initAccordion } from './js/modules/toggleAccordion.js';
 import ScrollHint from 'scroll-hint';
 import 'scroll-hint/css/scroll-hint.css';
-import { Autoplay } from 'swiper/modules';
 
 initNavigationMenu();
 initToggleMenu();
@@ -53,7 +52,7 @@ registerResponsiveSlider('.js-kv-slider', {
 	centeredSlide: true,
 	loop: true,
 	autoplay: {
-        delay: 2500,
+        delay: 4000,
         disableOnInteraction: false
 	}
 	// 他に必要なSwiperオプションを追加
