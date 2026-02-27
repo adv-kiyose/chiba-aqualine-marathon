@@ -306,6 +306,10 @@
 			@include respond-to {
 				display: none;
 			}
+
+			& > p {
+				flex: 0 0 50%;
+			}
 		}
 	}
 
