@@ -193,6 +193,18 @@
 				font-size: 11px;
 			}
 		}
+
+		&--women {
+			margin-bottom: 24px;
+
+			@include respond-to {
+				margin-bottom: 8px;
+			}
+			
+			span {
+				color: $color-tag-info;
+			}
+		}
 	}
 
 	&__caution {
@@ -302,6 +314,10 @@
 	&__list {
 		&--women {
 			margin-top: 48px;
+
+			&:first-child {
+				margin-top: 0;
+			}
 
 			@include respond-to {
 				margin-top: 24px;
