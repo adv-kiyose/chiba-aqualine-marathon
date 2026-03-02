@@ -1,15 +1,33 @@
 [
 	{
-		"date": "2025.3.2",
-		"tags": ["イベント・応援"],
-		"text": "アクアラインマラソン初チャレンジ！公認グルメ系アンバサダーのご紹介",
-		"link": "/tournament/gourmetambassador.html"
+		"date": "2026.3.2",
+		"tags": ["ランナー"],
+		"text": "学生応援！女性応援！キャンペーンのお知らせ",
+		"link": "/runner/support-category.html"
+	},
+	{
+		"date": "2026.3.2",
+		"tags": ["交通規制"],
+		"text": "大会当日の交通規制についてのお知らせ",
+		"link": "/traffic/traffic-regulation.html"
+	},
+	{
+		"date": "2026.3.2",
+		"tags": ["ランナー"],
+		"text": "Tシャツのデザインが決定しました！",
+		"link": "/runner/prize.html"
 	},
 	{
 		"date": "2026.3.1",
 		"tags": ["ランナー"],
 		"text": "ふるさと納税枠のエントリーがスタート！",
 		"link": "/runner/entry.html#hometown"
+	},
+	{
+		"date": "2025.2.23",
+		"tags": ["イベント・応援"],
+		"text": "アクアラインマラソン初チャレンジ！公認グルメ系アンバサダーのご紹介",
+		"link": "/tournament/gourmetambassador.html"
 	},
 	{
 		"date": "2025.2.2",
