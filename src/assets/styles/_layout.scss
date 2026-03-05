@@ -122,6 +122,12 @@
 	}
 }
 
+body.entry .l-header__entry {
+	@include respond-to {
+		display: none;
+	}
+}
+
 .is-open .l-header {
 	&__block {
 		&--bottom {

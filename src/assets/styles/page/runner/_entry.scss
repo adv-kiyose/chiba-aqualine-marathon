@@ -132,6 +132,11 @@
 		&--table-guide {
 			width: 100%;
 			overflow-x: auto;
+			margin-bottom: 16px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
 
 			table {
 				min-width: 100%;
@@ -337,6 +342,17 @@
 
 		&--guideline {
 			margin-bottom: 24px;
+		}
+
+		&--buttons {
+			margin-right: 24px;
+			margin-left: 24px;
+			display: flex;
+			gap: 32px;
+
+			@include respond-to {
+				gap: 16px;
+			}
 		}
 	}
 
@@ -635,17 +651,40 @@
 			a {
 				padding: 24px;
 				font-size: 32px;
+				line-height: 1;
 				font-weight: bold;
-				color: $color-disabled-text-gray;
-				background-color: $color-disabled-button-gray;
+				color: $color-main-blue;
+				background-color: $color-white;
 				border-radius: 8px;
+				border: 3px solid $color-main-blue;
 				text-align: center;
-				display: block;
+				display: flex;
+				align-items:stretch;
+				justify-content: center;
+				gap: 25px;
 				user-select: none;
+				transition: background-color $fade-spd-default ease, color $fade-spd-default ease;
 
-				&[href] {
-					background-color: $color-tag-info;
+				&::after {
+					content: "";
+					display: block;
+					width: 32px;
+					height: 32px;
+					background: url(@/assets/images/utils/icon_circle_arrow_white.svg) center no-repeat;
+					background-size: contain;
+					filter: $filter-white-to-blue;
+					transition-delay: 0.05s;
+					position: relative;
+					top: 2px;
+				}
+
+				&:hover {
 					color: $color-white;
+					background-color: $color-main-blue;
+
+					&::after {
+						filter: none;
+					}
 				}
 
 				// 受付終了後にクラス付与
@@ -656,6 +695,33 @@
 				@include respond-to {
 					padding: 10px;
 					font-size: 20px;
+
+					&::after {
+						width: 20px;
+						height: 20px;
+						top: 1px;
+					}
+				}
+			}
+		}
+
+		&--entry-here {
+			flex: 1 1 auto;
+			a {
+				padding: 24px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: $color-white;
+				font-size: 24px;
+				font-weight: bold;
+				line-height: 1;
+				background-color: $color-tag-info;
+				border-radius: 8px;
+
+				@include respond-to {
+					padding: 18px;
+					font-size: 18px;
 				}
 			}
 		}
