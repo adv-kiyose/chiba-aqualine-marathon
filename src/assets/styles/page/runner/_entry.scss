@@ -716,12 +716,19 @@
 				font-size: 24px;
 				font-weight: bold;
 				line-height: 1;
+				border: 3px solid $color-tag-info;
 				background-color: $color-tag-info;
 				border-radius: 8px;
+				transition: background-color $fade-spd-default ease, color $fade-spd-default ease;
 
 				@include respond-to {
 					padding: 18px;
 					font-size: 18px;
+				}
+
+				&:hover {
+					color: $color-tag-info;
+					background-color: $color-white;
 				}
 			}
 		}
