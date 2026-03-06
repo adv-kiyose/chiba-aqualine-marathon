@@ -6,10 +6,6 @@ $modal-inner-width: 724px; // モーダル内コンテンツの最大幅
 .p-sponsor {
     .c-heading__info + &__container {
         margin-top: -22px;
-
-        @include respond-to() {
-            margin-top: -46px;
-        }
     }
 
     &__container {
@@ -284,7 +280,8 @@ $modal-inner-width: 724px; // モーダル内コンテンツの最大幅
                 width: 50%;
             }
 
-            &.logo-olc {
+            &.logo-olc,
+            &.logo-vivi {
                 width: 80%;
             }
         }
@@ -309,7 +306,8 @@ $modal-inner-width: 724px; // モーダル内コンテンツの最大幅
                     width: 50%;
                 }
 
-                &.logo-olc {
+                &.logo-olc,
+                &.logo-vivi {
                     width: 60%;
                 }
             }
