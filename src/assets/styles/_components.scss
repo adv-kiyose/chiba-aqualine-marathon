@@ -1531,6 +1531,24 @@
 			gap: 24px;
 		}
 	}
+
+	&__timetable {
+		margin-bottom: 24px;
+		display: flex;
+		column-gap: 20px;
+		row-gap: 5px;
+		flex-wrap: wrap;
+
+		dt {
+			flex: 0 0 3em;
+			text-align: right;
+		}
+
+		dd {
+			flex: 1 1 calc(100% - (3em + 20px));
+			margin: 0;
+		}
+	}
 }
 
 .c-movie {
