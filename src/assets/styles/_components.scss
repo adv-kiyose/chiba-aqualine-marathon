@@ -1531,6 +1531,24 @@
 			gap: 24px;
 		}
 	}
+
+	&__timetable {
+		margin-bottom: 24px;
+		display: flex;
+		column-gap: 20px;
+		row-gap: 5px;
+		flex-wrap: wrap;
+
+		dt {
+			flex: 0 0 3em;
+			text-align: right;
+		}
+
+		dd {
+			flex: 1 1 calc(100% - (3em + 20px));
+			margin: 0;
+		}
+	}
 }
 
 .c-movie {
@@ -2126,6 +2144,10 @@
 			}
 		}
 	}
+
+	&__indent {
+		padding-left: 2rem;
+	}
 }
 
 .c-inner {
@@ -2190,6 +2212,16 @@
 			vertical-align: middle;
 			border: 1px solid $color-table-blue;
 		}
+	}
+}
+
+.c-grid {
+	display: grid;
+	row-gap: 8px;
+
+	&.columns-3 {
+		grid-template-columns: repeat(3, auto);
+		grid-auto-rows: auto;
 	}
 }
 
