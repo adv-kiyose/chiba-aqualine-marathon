@@ -1,5 +1,23 @@
 [
 	{
+		"date": "2026.3.9",
+		"tags": ["大会情報"],
+		"text": "「たむじょーさんと行く！大会の魅力&当日の動きを紹介!!」動画を公開！",
+		"link": "https://youtu.be/xRmHrM0FjsM"
+	},
+	{
+		"date": "2026.3.9",
+		"tags": ["ALL"],
+		"text": "【エントリー情報】スポーツエントリーのメンバー登録をおすすめします",
+		"link": "https://www.sportsentry.ne.jp/register"
+	},
+	{
+		"date": "2026.3.6",
+		"tags": ["ALL"],
+		"text": "【エントリー情報】スポーツエントリーサイトを公開いたしました。先着エントリー開始時は込み合うことが想定されますので事前のご確認を推奨いたします。",
+		"link": "https://www.sportsentry.ne.jp/events/search?keyword1=%E3%81%A1%E3%81%B0%E3%82%A2%E3%82%AF%E3%82%A2%E3%83%A9%E3%82%A4%E3%83%B3%E3%83%9E%E3%83%A9%E3%82%BD%E3%83%B3&button=&s_search=1"
+	},
+	{
 		"date": "2026.3.6",
 		"tags": ["大会情報"],
 		"text": "コース紹介動画を公開！",

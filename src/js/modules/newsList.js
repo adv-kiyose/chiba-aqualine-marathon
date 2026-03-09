@@ -3,7 +3,8 @@ const categoryMap = {
 	"ランナー": "runner",
 	"ボランティア": "volunteer",
 	"イベント・応援": "event",
-	"交通規制": "traffic"
+	"交通規制": "traffic",
+	"ALL": "all"
 };
 
 const list = document.querySelector('.c-list__news--list');

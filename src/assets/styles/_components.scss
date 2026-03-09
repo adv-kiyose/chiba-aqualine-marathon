@@ -1573,6 +1573,7 @@
 	line-height: 1;
 	border-radius: 20px;
 	overflow: hidden;
+	background: $color-main-blue;
 
 	@include respond-to() {
 		font-size: 12px;
