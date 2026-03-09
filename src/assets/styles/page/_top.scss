@@ -322,6 +322,16 @@
 			}
 		}
 	}
+
+	&__banner {
+		&--entry {
+			margin-bottom: 36px;
+
+			@include respond-to {
+				margin-bottom: 24px;
+			}
+		}
+	}
 }
 
 html[lang=ja_JP],
