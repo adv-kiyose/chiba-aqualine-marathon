@@ -1695,6 +1695,7 @@
 
 	&__guideline {
 		margin-bottom: 24px;
+		text-indent: 0;
 
 		@include respond-to() {
 			font-size: 14px;
