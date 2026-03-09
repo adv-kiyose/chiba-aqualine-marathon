@@ -2250,16 +2250,36 @@
 			}
 		}
 
+		thead {
+			tr:first-child {
+				th {
+					border-top: 1px solid $color-table-blue;
+				}
+			}
+
+			th {
+				background-color: $color-table-blue;
+				border: 1px solid $color-white;
+				border-bottom: none;
+
+				&:first-child {
+					border-left: 1px solid $color-table-blue;
+				}
+
+				&:last-child {
+					border-right: 1px solid $color-table-blue;
+				}
+			}
+		}
+
 		th {
 			width: 25%;
 			padding: 15px;
 			font-size: 16px;
 			font-weight: normal;
-			background-color: $color-table-blue;
 			text-align: center;
 			vertical-align: middle;
-			border: 1px solid $color-white;
-			border-bottom: none;
+			border: 1px solid $color-table-blue;
 
 			@include respond-to() {
 				width: 245px;
@@ -2297,6 +2317,12 @@
 				@include respond-to {
 					width: auto;
 				}
+			}
+		}
+
+		&.align-left {
+			td {
+				text-align: left;
 			}
 		}
 	}
