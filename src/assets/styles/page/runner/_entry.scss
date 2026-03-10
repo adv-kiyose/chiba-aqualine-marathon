@@ -731,6 +731,13 @@
 					color: $color-tag-info;
 					background-color: $color-white;
 				}
+
+				&[area-disabled="true"] {
+					background-color: $color-disabled-gray;
+					border-color: $color-disabled-gray;
+					pointer-events: none;
+					user-select: none;
+				}
 			}
 		}
 
