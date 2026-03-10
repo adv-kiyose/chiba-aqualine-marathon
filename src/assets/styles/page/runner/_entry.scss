@@ -733,8 +733,9 @@
 				}
 
 				&[area-disabled="true"] {
-					background-color: $color-disabled-gray;
-					border-color: $color-disabled-gray;
+					color: $color-disabled-text-gray;
+					background-color: $color-disabled-button-gray;
+					border-color: $color-disabled-button-gray;
 					pointer-events: none;
 					user-select: none;
 				}
