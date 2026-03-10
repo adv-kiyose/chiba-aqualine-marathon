@@ -78,8 +78,8 @@
 				</div>
 				<div class="c-block__guideline">
 					<h4 class="c-heading__guideline">9. 種目・定員</h4>
-					<div class="c-table__guideline js-scrollable">
-						<table>
+					<div class="c-table__guideline">
+						<table class="fixed-sp">
 							<thead>
 								<tr>
 									<th>種目</th>
@@ -149,7 +149,7 @@
 					</ul>
 				</div>
 				<div class="c-block__guideline">
-					<h4 class="c-heading__guideline">13. チャリティ</h4>
+					<h4 class="c-heading__guideline" id="charity">13. チャリティ</h4>
 					<p class="c-text__guideline">千葉県のスポーツ・パラスポーツ活動の振興を図ることや様々な人道的活動への支援を目的として、チャリティを実施します。</p>
 					<ul class="c-list__guideline--ol-bracket">
 						<li><h5 class="c-heading__inline">参加方法</h5>
@@ -342,7 +342,7 @@
 					</div>
 				</div>
 				<div class="c-block__guideline">
-					<h4 class="c-heading__guideline">18. 各エントリー枠（先着）の募集期間等</h4>
+					<h4 class="c-heading__guideline" id="period">18. 各エントリー枠（先着）の募集期間等</h4>
 					<ul class="c-list__guideline--kome">
 						<li>ペアは男女を問わない。団体は3～6名（マラソンのみ）</li>
 					</ul>
@@ -374,9 +374,9 @@
 											<li>〇 千葉県に在住の方に限り申込をすることができます。</li>
 										</ul>
 									</td>
-									<td>〇</td>
-									<td>〇</td>
-									<td>〇<br>ﾏﾗｿﾝ</td>
+									<td class="u-align-center">〇</td>
+									<td class="u-align-center">〇</td>
+									<td class="u-align-center">〇<br>ﾏﾗｿﾝ</td>
 									<td>3,500</td>
 									<td>1,500</td>
 									<td>3/15(日) 午後8時から<br>
@@ -388,12 +388,12 @@
 									<td>
 										<ul class="c-list__guideline--blanc">
 											<li>〇 県内外問わずどなたでも申込をすることができます。</li>
-											<li>※ 車いすハーフマラソンに申し込みをされる方は、パラ・スポーツ枠へお申込ください。</li>
+											<li>※ <span class="u-emp">車いすハーフマラソン</span>に申し込みをされる方は、<span class="u-emp">パラ・スポーツ枠</span>へお申込ください。</li>
 										</ul>
 									</td>
-									<td>〇</td>
-									<td>〇</td>
-									<td>〇<br><span>ﾏﾗｿﾝ</span></td>
+									<td class="u-align-center">〇</td>
+									<td class="u-align-center">〇</td>
+									<td class="u-align-center">〇<br><span class="u-no-wrap">ﾏﾗｿﾝ</span></td>
 									<td>6,690</td>
 									<td>2,170</td>
 									<td>3/22(日) 午後8時から<br>
@@ -409,8 +409,16 @@
 										<p>【対象期間】<br>
 											令和6年11月10日<br>
 											～令和8年3月31日</p>
+										<p>【設定時間】<br>
+											男性3時間30分以内<br>
+											女性4時間00分以内</p>
+										<ul class="c-list__guideline--blanc">
+											<li>※ 上記要件の確認のため、エントリー時に記録証の写真データの添付が必要です。</li>
+											<li>※ 虚偽申告があった場合は、失格 又は、スタートブロックの配置換えを行います。</li>
+										</ul>
+
 									</td>
-									<td>〇</td>
+									<td class="u-align-center">〇</td>
 									<td></td>
 									<td></td>
 									<td>600</td>
@@ -427,7 +435,7 @@
 											<li>※ 伴走者を同行させる場合は、エントリー時に忘れずに申込ください。</li>
 										</ul>
 									</td>
-									<td>〇</td>
+									<td class="u-align-center">〇</td>
 									<td></td>
 									<td></td>
 									<td>25</td>
@@ -440,10 +448,10 @@
 										<ul class="c-list__guideline--blanc">
 											<li>〇 チャリティの趣旨に賛同し、5万円以上を寄附された方が対象です。（参加料が別途必要です）</li>
 											<li>※ 寄附者以外の方へ出走権を譲渡することも可能です。</li>
-											<li>※ 「13 チャリティ」の項を参照してください。</li>
+											<li>※ 「<a href="#charity">13 チャリティ</a>」の項を参照してください。</li>
 										</ul>
 									</td>
-									<td>〇</td>
+									<td class="u-align-center">〇</td>
 									<td></td>
 									<td></td>
 									<td>25</td>
@@ -457,9 +465,9 @@
 											<li>〇 出走権と千葉県内宿泊施設の宿泊代金をセットにした枠です。<br>（参加料が含まれます）</li>
 										</ul>
 									</td>
-									<td>〇</td>
-									<td>〇</td>
-									<td>〇<br><span>ﾏﾗｿﾝ</span></td>
+									<td class="u-align-center">〇</td>
+									<td class="u-align-center">〇</td>
+									<td class="u-align-center">〇<br><span class="u-no-wrap">ﾏﾗｿﾝ</span></td>
 									<td>275</td>
 									<td>375</td>
 								</tr>
@@ -471,9 +479,9 @@
 											<li>〇 海外在住の外国籍の方が対象です。</li>
 										</ul>
 									</td>
-									<td>〇</td>
-									<td>〇</td>
-									<td>〇<br><span>ﾏﾗｿﾝ</span></td>
+									<td class="u-align-center">〇</td>
+									<td class="u-align-center">〇</td>
+									<td class="u-align-center">〇<br><span class="u-no-wrap">ﾏﾗｿﾝ</span></td>
 									<td>200</td>
 									<td>200</td>
 								</tr>
@@ -487,9 +495,9 @@
 											<li>※ エントリー時に学生証の写真 データの添付が必要です。</li>
 										</ul>
 									</td>
-									<td>〇</td>
-									<td>〇</td>
-									<td>〇<br><span>ﾏﾗｿﾝ</span></td>
+									<td class="u-align-center">〇</td>
+									<td class="u-align-center">〇</td>
+									<td class="u-align-center">〇<br><span class="u-no-wrap">ﾏﾗｿﾝ</span></td>
 									<td>300</td>
 									<td>100</td>
 								</tr>
@@ -502,7 +510,7 @@
 											<li>※ 女性応援特典（ZOZOCOSMEクーポン）等があります。</li>
 										</ul>
 									</td>
-									<td>〇</td>
+									<td class="u-align-center">〇</td>
 									<td></td>
 									<td></td>
 									<td>300</td>
@@ -513,13 +521,13 @@
 									<td>レイトエントリー枠</td>
 									<td>
 										<ul class="c-list__guideline--blanc">
-											<li>〇 県内外問わずどなたでも申込を することができます。</li>
+											<li>〇 県内外問わずどなたでも申込をすることができます。</li>
 										</ul>
 									</td>
-									<td>〇</td>
-									<td>〇</td>
-									<td>〇<br><span>ﾏﾗｿﾝ</span></td>
-									<td>約100</td>
+									<td class="u-align-center">〇</td>
+									<td class="u-align-center">〇</td>
+									<td class="u-align-center">〇<br><span class="u-no-wrap">ﾏﾗｿﾝ</span></td>
+									<td class="u-no-wrap">約100</td>
 									<td>約50</td>
 									<td>5/31（日）午後8時から<br>
 										6/8（月）午後5時まで</td>
@@ -528,14 +536,14 @@
 						</table>
 					</div>
 					<ul class="c-list__guideline--ol-bracket" style="counter-reset: guide 1;">
-						<li><h5 class="c-heading__inline">【注意事項：ペア及び団体戦のエントリーについて】</h5>
+						<li class="u-mb-2rem"><h5 class="c-heading__inline">【注意事項：ペア及び団体戦のエントリーについて】</h5>
 							<ul class="c-list__guideline--blanc">
 								<li>① 代表者は必ず、グループ全員の了承を得てください。</li>
 								<li>② 代表者がグループ全員の登録情報をあらかじめ確認の上、申込みください。</li>
 								<li>③ グループ全員、同一種目での申込みとなります。</li>
 							</ul>
 						</li>
-						<li><h5 class="c-heading__inline">参加者の決定</h5>
+						<li class="u-mb-2rem"><h5 class="c-heading__inline">参加者の決定</h5>
 							<ul class="c-list__guideline--blanc">
 								<li>① 申込者数が募集定員に達した時点で締切となります。</li>
 								<li>② 決定は、入金確認後、スポーツエントリーのマイページ＜エントリー履歴＞に「申込み確定」と表示されますので、御確認ください。</li>
@@ -543,18 +551,16 @@
 							</ul>
 						</li>
 						<li><h5 class="c-heading__inline">支払い方法</h5>
-							<div class="c-block__indent">
-								<p class="c-text__guideline">クレジットカード又はコンビニ決済</p>
-							</div>
+							<p class="c-text__guideline">クレジットカード又はコンビニ決済</p>
 						</li>
 					</ul>
 				</div>
-				<div class="c-block__guideline">
+				<div class="c-block__guideline" id="register">
 					<h4 class="c-heading__guideline">19. 申込みについて（全体）</h4>
 					<ul class="c-list__guideline--ol-bracket">
 						<li><h5 class="c-heading__inline">申込方法</h5>
-							<p class="c-text__guideline">インターネットによる申込みとなります。大会公式ホームページ（<a href="https://chiba-aqualine-marathon.com">https://chiba-aqualine-marathon.com</a>）から、エントリーページにアクセスしてください。<br>
-							申込は先着順となりますので、事前にスポーツエントリー（<a href="https://www.sportsentry.ne.jp/register" target="_blank">https://www.sportsentry.ne.jp/register</a>）へ利用者登録を済ませておくことをお勧めいたします。</p>
+							<p class="c-text__guideline">インターネットによる申込みとなります。大会公式ホームページ（<a class="c-link" href="https://chiba-aqualine-marathon.com">https://chiba-aqualine-marathon.com</a>）から、エントリーページにアクセスしてください。<br>
+							申込は先着順となりますので、事前にスポーツエントリー（<a class="c-link" href="https://www.sportsentry.ne.jp/register" target="_blank">https://www.sportsentry.ne.jp/register</a>）へ利用者登録を済ませておくことをお勧めいたします。</p>
 						</li>
 						<li><h5 class="c-heading__inline">入金手続</h5>
 							<ul class="c-list__guideline--blanc">
@@ -571,12 +577,12 @@
 					<ul class="c-list__guideline--ol-bracket">
 						<li><h5 class="c-heading__inline">エントリーの確認</h5>
 							<ul class="c-list__guideline--blanc">
-								<li>①「18 各エントリー枠（先着）の募集期間等」の（3）を参照</li>
+								<li>①「<a class="c-link" href="#period">18 各エントリー枠（先着）の募集期間等</a>」の（3）を参照</li>
 							</ul>
 						</li>
 						<li><h5 class="c-heading__inline">参加料入金等の手続き</h5>
 							<ul class="c-list__guideline--blanc">
-								<li>「19 申込みについて」の（2）を参照</li>
+								<li>「<a class="c-link" href="#register"> 19 申込みについて</a>」の（2）を参照</li>
 							</ul>
 						</li>
 						<li><h5 class="c-heading__inline">参加に関する案内</h5>
@@ -630,7 +636,7 @@
 						<li>インターネット回線の不具合などによる申込の遅れについて、主催者は一切の責任を負いません。</li>
 						<li>申込みの際、御利用の端末機、ＯＳ、ブラウザソフトによっては申込できないことがあります。</li>
 						<li>申込み時に必要な項目は、次のとおりです。氏名・性別・生年月日・国籍・住所（送付先）・電話番号（日中の連絡先）・E-mailアドレス・申込種目の過去の参加経験（大会名・記録等）・フィニッシュ予想タイム・伴走者の有無（有の場合はその理由）・緊急連絡先等（TEL、氏名、続柄）</li>
-						<li>スタート時の混乱を緩和し、より安全な競技運営を行うために、フィニッシュ予想タイムは必ず実力に見合ったタイムを申請してください。周囲とペースが合わない場合は他の選手の迷惑になるばかりかご自身が事故に巻き込まれる可能性があります。</li>
+						<li>スタート時の混乱を緩和し、より安全な競技運営を行うために、<span class="u-emp">フィニッシュ予想タイムは必ず実力に見合ったタイム</span>を申請してください。周囲とペースが合わない場合は他の選手の迷惑になるばかりかご自身が事故に巻き込まれる可能性があります。</li>
 						<li>参加料等領収書の発行はいたしません。</li>
 					</ul>
 				</div>
@@ -658,8 +664,13 @@
 					<div class="c-block__indent">
 						<p class="c-text__guideline">TEL：0120-711-951 ［10時00分～17時00分(土日、祝日を除く)］<br>
 						スポーツエントリー問合せフォーム<br>
-						URL：<a href="https://www.sportsentry.ne.jp/inquiry" target="_blank">https://www.sportsentry.ne.jp/inquiry</a> （随時受付）</p>
+						URL：<a class="c-link" href="https://www.sportsentry.ne.jp/inquiry" target="_blank">https://www.sportsentry.ne.jp/inquiry</a> （随時受付）</p>
 					</div>
+				</div>
+				<div class="c-block__guideline">
+					<h4 class="c-heading__guideline">◆コース図（平面図）</h4>
+					<p class="c-image__guideline"><img src="/images/tournament/course/img_map.png" alt="画像：コース図"></p>
+					<p class="c-image__guideline"><img src="/images/tournament/course/img_high_low.png" alt="画像：高低差図"></p>
 				</div>
 			</section>
 		</div>
