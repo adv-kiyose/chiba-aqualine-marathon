@@ -1815,6 +1815,13 @@
 }
 
 .c-link {
+	text-decoration: underline;
+	color: $color-main-blue;
+
+	&:hover {
+		text-decoration: none;
+	}
+
 	&__text {
 		a {
 			font-size: 14px;
@@ -2245,6 +2252,19 @@
 
 			@include respond-to() {
 				width: 980px;
+
+				&.fixed-sp {
+					width: 100%;
+				}
+			}
+
+			a {
+				color: $color-main-blue;
+				text-decoration: underline;
+
+				&:hover {
+					text-decoration: none;
+				}
 			}
 		}
 
@@ -2296,7 +2316,7 @@
 		}
 
 		td {
-			padding: 15px;
+			padding: 10px;
 			font-size: 16px;
 			text-align: center;
 			vertical-align: middle;
@@ -2331,7 +2351,7 @@
 	row-gap: 8px;
 
 	&.columns-3 {
-		grid-template-columns: repeat(3, max-content);
+		grid-template-columns: max-content max-content auto;
 		grid-auto-rows: auto;
 
 		> *:nth-child(3n + 2) {

@@ -9,17 +9,30 @@
 	display: none;
 }
 
+.u-no-wrap {
+	white-space: nowrap;
+}
+
 .u-mb-0 {
 	margin-bottom: 0;
+}
+
+.u-mb-2rem {
+	margin-bottom: 2rem;
 }
 
 .u-mt-0 {
 	margin-top: 0;
 }
 
+.u-align-center {
+	text-align: center !important;
+}
+
 .u-emp {
 	font-weight: bold;
 }
+
 
 .u-sp {
 	display: none !important;
