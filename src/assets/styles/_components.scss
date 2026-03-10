@@ -2331,7 +2331,7 @@
 	row-gap: 8px;
 
 	&.columns-3 {
-		grid-template-columns: repeat(3, max-content);
+		grid-template-columns: max-content max-content auto;
 		grid-auto-rows: auto;
 
 		> *:nth-child(3n + 2) {
