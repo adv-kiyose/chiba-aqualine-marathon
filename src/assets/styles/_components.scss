@@ -1853,9 +1853,9 @@
 		transition: color $fade-spd-default ease;
 
 		@include respond-to() {
-			padding: 24px 16px;
+			padding: 16px;
 			font-size: 18px;
-			letter-spacing: 0.05;
+			letter-spacing: 0.05em;
 			border-bottom: 1px solid $color-tab-default-gray;
 			display: flex;
 			align-items: center;
