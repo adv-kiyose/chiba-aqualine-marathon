@@ -16,6 +16,7 @@
 	&__wrapper {
 		&--navigation {
 			flex: 1 1 auto;
+			position: relative;
 		} 
 	}
 
@@ -42,7 +43,7 @@
 			justify-content: space-between;
 
 			@include respond-to() {
-				width: 0;
+				width: 100%;
 				height: calc(100dvh - 50px);
 				display: block;
 				padding: 0;
@@ -125,16 +126,6 @@
 body.entry .l-header__entry {
 	@include respond-to {
 		display: none;
-	}
-}
-
-.is-open .l-header {
-	&__block {
-		&--bottom {
-			@include respond-to() {
-				width: 100%;
-			}
-		}
 	}
 }
 
