@@ -54,6 +54,10 @@ registerResponsiveSlider('.js-kv-slider', {
 	autoplay: {
         delay: 4000,
         disableOnInteraction: false
+	},
+	navigation: {
+		nextEl: null, //「次へボタン」要素指定
+		prevEl: null, //「前へボタン」要素指定
 	}
 	// 他に必要なSwiperオプションを追加
 }, 768);

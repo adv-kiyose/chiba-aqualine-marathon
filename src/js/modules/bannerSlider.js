@@ -62,20 +62,25 @@ function evaluateSelector({ selector, options, breakpoint }) {
 		}
 
 	// ナビボタン
-	let prevBtn = parent.querySelector('.swiper-button-prev');
-	let nextBtn = parent.querySelector('.swiper-button-next');
-	if (!prevBtn) prevBtn = createNavButton('prev');
-	if (!nextBtn) nextBtn = createNavButton('next');
-	// 既に追加されていなければ append
-	if (!prevBtn.parentElement) parent.appendChild(prevBtn);
-	if (!nextBtn.parentElement) parent.appendChild(nextBtn);
+  let prevBtn = null;
+  let nextBtn = null;
+
+  if(options.navigation?.nextEl !== null && !options.navigation?.prevEl !== null) {
+    prevBtn = parent.querySelector('.swiper-button-prev');
+    nextBtn = parent.querySelector('.swiper-button-next');
+    if (!prevBtn) prevBtn = createNavButton('prev');
+    if (!nextBtn) nextBtn = createNavButton('next');
+    // 既に追加されていなければ append
+    if (!prevBtn.parentElement) parent.appendChild(prevBtn);
+    if (!nextBtn.parentElement) parent.appendChild(nextBtn);
+  }
 
       // Swiper に渡す最終オプション
 	const finalOptions = {
         modules: [Navigation, Autoplay],
         slidesPerView: 'auto',
         spaceBetween: 16,
-        navigation: { prevEl: prevBtn, nextEl: nextBtn },
+        navigation: { prevEl: prevBtn || null, nextEl: nextBtn || null },
         // loop は overflow の有無で決める
         loop: loopEnabled,
         // もし loopEnabled なら明示的に複製数を指定する（安全策）
@@ -86,14 +91,15 @@ function evaluateSelector({ selector, options, breakpoint }) {
         on: {
 			// 初期化直後と resize 時にナビ切替
 			init(sw) {
-				toggleNavigation(sw, totalSlidesWidth, containerWidth);
+        toggleNavigation(sw, totalSlidesWidth, containerWidth);
 			},
 			resize(sw) {
 				// 再計算（スライドやコンテナが変わる可能性あり）
 				const slides2 = sw.el.querySelectorAll('.swiper-slide');
 				const totalW = calcTotalSlidesWidth(slides2);
 				const contW = sw.el.clientWidth;
-				toggleNavigation(sw, totalW, contW);
+
+        toggleNavigation(sw, totalW, contW);
 			},
         },
       };
@@ -146,6 +152,8 @@ function evaluateSelector({ selector, options, breakpoint }) {
 
 /** ナビの表示/非表示切替（totalSlidesWidth / containerWidth を渡す） */
 function toggleNavigation(swiper, totalSlidesWidth, containerWidth) {
+  // ナビゲーションオプションがnullならスキップ
+  if(!swiper.navigation.nextEl || !swiper.navigation.prevEl) { return; }
   const prev = swiper.el.parentElement.querySelector('.swiper-button-prev');
   const next = swiper.el.parentElement.querySelector('.swiper-button-next');
   const overflow = totalSlidesWidth > containerWidth + 1;
