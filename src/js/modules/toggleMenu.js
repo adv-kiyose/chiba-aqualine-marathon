@@ -3,7 +3,7 @@ export function initToggleMenu() {
 	document.addEventListener('DOMContentLoaded', () => {
 		const breakpoint = window.matchMedia('(max-width: 767px)');
 		const toggleMenuButton = document.querySelector('.js-toggle-menu');
-		const headerNavigation = document.querySelector('.c-navigation__header--wrapper');
+		const headerNavigation = document.querySelector('.l-header__block--bottom');
 		const root = document.querySelector('body');
 
 		let tempScrollY = 0; // メニュー展開時、スクロール位置を保存
