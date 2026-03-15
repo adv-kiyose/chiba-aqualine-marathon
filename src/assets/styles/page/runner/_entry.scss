@@ -838,6 +838,17 @@
 					right: 16px;
 				}
 			}
+			&.stay{
+				width: 75px;
+				top: -14px;
+				right: 18px;
+
+				@include respond-to {
+					width: 48px;
+					top: -8px;
+					right: 16px;
+				}
+			}
 		}
 	}
 
